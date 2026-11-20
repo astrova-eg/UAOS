@@ -1,0 +1,639 @@
+{
+    "timestamp": "2026-11-19T12:19:25+00:00",
+    "summary": {
+        "status": "FULLY_COMPLIANT",
+        "total_checks": 121,
+        "passed_checks": 121,
+        "failed_checks": 0,
+        "warnings": 0
+    },
+    "sections": {
+        "static_directories": [
+            {
+                "check": "Directory 'agents' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents"
+            },
+            {
+                "check": "Directory 'agents\/A_leadership_governance' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/A_leadership_governance"
+            },
+            {
+                "check": "Directory 'agents\/B_project_discovery' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/B_project_discovery"
+            },
+            {
+                "check": "Directory 'agents\/C_architecture_design' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/C_architecture_design"
+            },
+            {
+                "check": "Directory 'agents\/D_laravel_php_engineering' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/D_laravel_php_engineering"
+            },
+            {
+                "check": "Directory 'agents\/E_database_engineering' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/E_database_engineering"
+            },
+            {
+                "check": "Directory 'agents\/F_security_cryptography' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/F_security_cryptography"
+            },
+            {
+                "check": "Directory 'agents\/G_ui_ux_design' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/G_ui_ux_design"
+            },
+            {
+                "check": "Directory 'agents\/H_frontend_engineering' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/H_frontend_engineering"
+            },
+            {
+                "check": "Directory 'agents\/I_api_integrations' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/I_api_integrations"
+            },
+            {
+                "check": "Directory 'agents\/J_qa_testing' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/J_qa_testing"
+            },
+            {
+                "check": "Directory 'agents\/K_performance_scalability' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/K_performance_scalability"
+            },
+            {
+                "check": "Directory 'agents\/L_devops_infrastructure' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/L_devops_infrastructure"
+            },
+            {
+                "check": "Directory 'agents\/M_independent_audit' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/M_independent_audit"
+            },
+            {
+                "check": "Directory 'agents\/N_documentation_closure' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/agents\/N_documentation_closure"
+            },
+            {
+                "check": "Directory 'departments' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/departments"
+            },
+            {
+                "check": "Directory 'governance' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/governance"
+            },
+            {
+                "check": "Directory 'standards' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/standards"
+            },
+            {
+                "check": "Directory 'skills' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/skills"
+            },
+            {
+                "check": "Directory 'workflows' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/workflows"
+            },
+            {
+                "check": "Directory 'profiles' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/profiles"
+            },
+            {
+                "check": "Directory 'schemas' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/schemas"
+            },
+            {
+                "check": "Directory 'registry' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/registry"
+            },
+            {
+                "check": "Directory 'templates' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/templates"
+            },
+            {
+                "check": "Directory 'validation' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/validation"
+            },
+            {
+                "check": "Directory 'reports' exists",
+                "passed": true,
+                "details": "Path: C:\\laragon\\www\\core\\.agents\/reports"
+            }
+        ],
+        "governance_files": [
+            {
+                "check": "Governance file 'ORGANIZATION-CHARTER.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'ENGINEERING-CONSTITUTION.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'GLOBAL-ENGINEERING-RULES.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'AGENT-OPERATING-RULES.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'AGENT-AUTHORITY-POLICY.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'AGENT-SEPARATION-OF-DUTIES.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'SECURITY-GOVERNANCE-POLICY.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'QUALITY-GOVERNANCE-POLICY.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'DOCUMENTATION-POLICY.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'NAMING-AND-IDENTIFICATION-STANDARDS.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'FILE-ORGANIZATION-STANDARDS.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'PROJECT-PROFILE-SPECIFICATION.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'AGENT-REGISTRY-SPECIFICATION.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'WORKFLOW-GOVERNANCE.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'APPROVAL-GATES-POLICY.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'INDEPENDENT-AUDIT-POLICY.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'CHANGE-MANAGEMENT-POLICY.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'VERSIONING-POLICY.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'CONFLICT-RESOLUTION-POLICY.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'EVIDENCE-AND-REPORTING-POLICY.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Governance file 'REUSABILITY-AND-PORTABILITY-POLICY.md' exists",
+                "passed": true,
+                "details": ""
+            }
+        ],
+        "department_charters": [
+            {
+                "check": "Department charter 'dept-a-leadership-governance.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-b-project-discovery.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-c-architecture-design.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-d-laravel-php-engineering.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-e-database-engineering.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-f-security-cryptography.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-g-ui-ux-design.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-h-frontend-engineering.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-i-api-integrations.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-j-qa-testing.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-k-performance-scalability.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-l-devops-infrastructure.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-m-independent-audit.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department charter 'dept-n-documentation-closure.md' exists",
+                "passed": true,
+                "details": ""
+            }
+        ],
+        "shared_skills": [
+            {
+                "check": "Skill file 'laravel-engineering-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'php-engineering-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'secure-coding-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'database-engineering-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'api-engineering-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'software-architecture-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'testing-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'ui-ux-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'accessibility-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'performance-engineering-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'documentation-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'code-review-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'error-handling-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'version-compatibility-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'git-change-management-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'cryptography-key-management-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'multi-tenant-isolation-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'filament-livewire-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'react-engineering-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'ci-cd-devops-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'queue-async-architecture-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'software-design-standards.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Skill file 'vue-inertia-standards.md' exists",
+                "passed": true,
+                "details": ""
+            }
+        ],
+        "workflows": [
+            {
+                "check": "Workflow file '01-discovery-and-analysis.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '02-architecture-and-design.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '03-specification-engineering.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '04-specification-review.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '05-atomic-task-engineering.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '06-atomic-task-review.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '07-implementation-planning.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '08-implementation-plan-review.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '09-implementation-authorization.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '10-code-implementation.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '11-testing-and-verification.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '12-independent-technical-audit.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '13-acceptance-verification.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file '14-system-closure.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file 'workflow-orchestration-matrix.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Workflow file 'escalation-and-handoff-protocols.md' exists",
+                "passed": true,
+                "details": ""
+            }
+        ],
+        "schemas": [
+            {
+                "check": "Schema 'project-profile.schema.json' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Schema 'agent-specification.schema.json' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Schema 'audit-report.schema.json' exists",
+                "passed": true,
+                "details": ""
+            }
+        ],
+        "profiles": [
+            {
+                "check": "Profile 'active-profile.json' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Profile 'profile-greenfield-saas-filament.json' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Profile 'profile-legacy-monolith-blade.json' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Profile 'profile-api-react-spa.json' exists",
+                "passed": true,
+                "details": ""
+            }
+        ],
+        "templates": [
+            {
+                "check": "Template 'adr-template.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Template 'audit-report-template.md' exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Template 'atomic-task-template.md' exists",
+                "passed": true,
+                "details": ""
+            }
+        ],
+        "registry": [
+            {
+                "check": "Agent registry file exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Agent registry count is 112",
+                "passed": true,
+                "details": "Found: 112"
+            }
+        ],
+        "agent_specs": [
+            {
+                "check": "Physical agent specifications count is 112",
+                "passed": true,
+                "details": "Found: 112"
+            },
+            {
+                "check": "Zero duplicate agent IDs (112 unique IDs)",
+                "passed": true,
+                "details": "Duplicates: "
+            },
+            {
+                "check": "All 112 agents contain all 56 mandatory sections",
+                "passed": true,
+                "details": ""
+            }
+        ],
+        "semantic_checks": [
+            {
+                "check": "Separation of Duties matrix exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Department M consists of exactly 8 independent auditors",
+                "passed": true,
+                "details": "Found: 8"
+            },
+            {
+                "check": "Dedicated Cryptography Engineer (CRYP-001) exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Dedicated Key Management Specialist (KEY-001) exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Dedicated Product UX Strategist (UXS-001) exists",
+                "passed": true,
+                "details": ""
+            },
+            {
+                "check": "Dedicated Accessibility Specialist (A11Y-001) exists",
+                "passed": true,
+                "details": ""
+            }
+        ]
+    }
+}

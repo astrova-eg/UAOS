@@ -1,0 +1,42 @@
+{
+    "profile_version": "1.0.0",
+    "status": "CONFIRMED",
+    "project_meta": {
+        "name": "Decoupled Laravel API with React TypeScript SPA",
+        "architecture_style": "api_backend_spa",
+        "tenancy_model": "database_per_tenant"
+    },
+    "runtime_environment": {
+        "php_version": "8.3.x",
+        "composer_version": "2.7.x",
+        "os_target": "Docker Alpine Linux"
+    },
+    "backend_stack": {
+        "laravel_version": "11.x",
+        "queue_driver": "redis",
+        "cache_driver": "redis",
+        "session_driver": "cookie"
+    },
+    "database_stack": {
+        "engine": "postgresql",
+        "version": "16.x",
+        "connection_mode": "pgbouncer"
+    },
+    "frontend_stack": {
+        "primary_technology": "react_ts",
+        "ui_framework": "tailwind_css",
+        "admin_panel_technology": "custom_react_admin",
+        "rtl_native": true
+    },
+    "security_compliance": {
+        "auth_guard": "sanctum_token",
+        "mfa_enforced": true,
+        "encryption_algorithm": "AES-256-GCM",
+        "key_management": "hashicorp_vault"
+    },
+    "infrastructure_devops": {
+        "server_runtime": "octane_frankenphp",
+        "ci_provider": "github_actions",
+        "containerized": true
+    }
+}

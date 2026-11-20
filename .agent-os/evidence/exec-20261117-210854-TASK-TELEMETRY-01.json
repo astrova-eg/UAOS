@@ -1,0 +1,13 @@
+{
+    "session_id": "sess_20261117_210854_d69e1eff",
+    "project_id": "core",
+    "task_id": "TASK-TELEMETRY-01",
+    "agent_id": "LCOR-001",
+    "department_id": "dept-d-laravel-php-engineering",
+    "adapter_id": "cli",
+    "status": "SUCCESS",
+    "summary": "Task executed cleanly within boundaries.",
+    "duration_seconds": 0,
+    "events_count": 0,
+    "events": []
+}

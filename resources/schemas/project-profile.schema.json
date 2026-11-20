@@ -1,0 +1,191 @@
+{
+    "$schema": "https:\/\/json-schema.org\/draft\/2020-12\/schema",
+    "title": "Project Technology Profile Schema",
+    "type": "object",
+    "required": [
+        "profile_version",
+        "project_meta",
+        "runtime_environment",
+        "backend_stack",
+        "database_stack",
+        "frontend_stack",
+        "security_compliance",
+        "infrastructure_devops"
+    ],
+    "properties": {
+        "profile_version": {
+            "type": "string"
+        },
+        "project_meta": {
+            "type": "object",
+            "required": [
+                "name",
+                "architecture_style",
+                "tenancy_model"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "architecture_style": {
+                    "type": "string",
+                    "enum": [
+                        "modular_monolith",
+                        "clean_hexagonal",
+                        "api_backend_spa",
+                        "distributed_services"
+                    ]
+                },
+                "tenancy_model": {
+                    "type": "string",
+                    "enum": [
+                        "single_tenant",
+                        "database_per_tenant",
+                        "schema_per_tenant",
+                        "column_scoped_shared_db"
+                    ]
+                }
+            }
+        },
+        "runtime_environment": {
+            "type": "object",
+            "required": [
+                "php_version",
+                "composer_version",
+                "os_target"
+            ],
+            "properties": {
+                "php_version": {
+                    "type": "string"
+                },
+                "composer_version": {
+                    "type": "string"
+                },
+                "os_target": {
+                    "type": "string"
+                }
+            }
+        },
+        "backend_stack": {
+            "type": "object",
+            "required": [
+                "laravel_version",
+                "queue_driver",
+                "cache_driver",
+                "session_driver"
+            ],
+            "properties": {
+                "laravel_version": {
+                    "type": "string"
+                },
+                "queue_driver": {
+                    "type": "string"
+                },
+                "cache_driver": {
+                    "type": "string"
+                },
+                "session_driver": {
+                    "type": "string"
+                }
+            }
+        },
+        "database_stack": {
+            "type": "object",
+            "required": [
+                "engine",
+                "version",
+                "connection_mode"
+            ],
+            "properties": {
+                "engine": {
+                    "type": "string",
+                    "enum": [
+                        "mysql",
+                        "postgresql",
+                        "sqlite"
+                    ]
+                },
+                "version": {
+                    "type": "string"
+                },
+                "connection_mode": {
+                    "type": "string"
+                }
+            }
+        },
+        "frontend_stack": {
+            "type": "object",
+            "required": [
+                "primary_technology",
+                "ui_framework",
+                "admin_panel_technology",
+                "rtl_native"
+            ],
+            "properties": {
+                "primary_technology": {
+                    "type": "string",
+                    "enum": [
+                        "blade",
+                        "livewire_3",
+                        "filament_3",
+                        "react_ts",
+                        "vue_ts",
+                        "inertia_react",
+                        "inertia_vue"
+                    ]
+                },
+                "ui_framework": {
+                    "type": "string"
+                },
+                "admin_panel_technology": {
+                    "type": "string"
+                },
+                "rtl_native": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "security_compliance": {
+            "type": "object",
+            "required": [
+                "auth_guard",
+                "mfa_enforced",
+                "encryption_algorithm",
+                "key_management"
+            ],
+            "properties": {
+                "auth_guard": {
+                    "type": "string"
+                },
+                "mfa_enforced": {
+                    "type": "boolean"
+                },
+                "encryption_algorithm": {
+                    "type": "string"
+                },
+                "key_management": {
+                    "type": "string"
+                }
+            }
+        },
+        "infrastructure_devops": {
+            "type": "object",
+            "required": [
+                "server_runtime",
+                "ci_provider",
+                "containerized"
+            ],
+            "properties": {
+                "server_runtime": {
+                    "type": "string"
+                },
+                "ci_provider": {
+                    "type": "string"
+                },
+                "containerized": {
+                    "type": "boolean"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "session_id": "sess_20261117_205334_23d32afb",
+    "project_id": "core",
+    "task_id": "TASK-EVID-01",
+    "agent_id": "DEV-001",
+    "department_id": "dept-d",
+    "adapter_id": "cli",
+    "status": "SUCCESS",
+    "summary": "Task completed without errors",
+    "duration_seconds": 0,
+    "events_count": 1,
+    "events": [
+        {
+            "timestamp": "2026-11-17T20:53:34+00:00",
+            "operation": "test_op",
+            "target_resource": "/path/to/file",
+            "permission_decision": "PERMITTED",
+            "details": {
+                "key": "[REDACTED]"
+            }
+        }
+    ]
+}

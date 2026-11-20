@@ -1,0 +1,32 @@
+{
+    "session_id": "sess_20261118_055353_06c11a39",
+    "project_id": "core",
+    "task_id": "TASK-GATE0-EVID",
+    "agent_id": "DEV-001",
+    "department_id": "dept-d",
+    "adapter_id": "cli",
+    "status": "BLOCKED",
+    "summary": "Gate 0 blocked",
+    "duration_seconds": 0,
+    "events_count": 1,
+    "events": [
+        {
+            "timestamp": "2026-11-18T05:53:53+00:00",
+            "operation": "GATE_0_EVALUATED",
+            "target_resource": "rdei://tasks/TASK-GATE0-EVID/gate0",
+            "permission_decision": "REJECTED",
+            "details": {
+                "status": "BLOCKED",
+                "task_id": "TASK-GATE0-EVID",
+                "dossier_id": "DOS-TEST-99",
+                "dossier_hash": "239f59ed55e737c77147cf55ad0c1b030b6d7ee748a7426952f9b852d5a935e5",
+                "reason": "Mandatory depth L3 trade-off matrix missing",
+                "violations": [
+                    "Missing comparison matrix"
+                ],
+                "operational_condition": "QUORUM_UNSATISFIED",
+                "audit_details": []
+            }
+        }
+    ]
+}

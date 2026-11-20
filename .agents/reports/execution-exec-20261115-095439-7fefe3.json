@@ -1,0 +1,48 @@
+{
+    "execution_id": "exec-20261115-095439-7fefe3",
+    "task_id": "TASK-1794736479",
+    "agent_id": "A11Y-001",
+    "stage": 10,
+    "status": "BLOCKED",
+    "started_at": "2026-11-15T09:54:39+00:00",
+    "completed_at": "2026-11-15T09:54:39+00:00",
+    "skills_selected": [
+        "SKILL-A11Y-001",
+        "SKILL-DOC-001",
+        "SKILL-FILA-001",
+        "SKILL-UIUX-001"
+    ],
+    "skills_loaded": [
+        "SKILL-A11Y-001",
+        "SKILL-DOC-001",
+        "SKILL-FILA-001",
+        "SKILL-UIUX-001"
+    ],
+    "gate_checks": [],
+    "operations": [
+        {
+            "operation": "write_file",
+            "status": "BLOCKED",
+            "result": null,
+            "error": "Stage 10 code writing blocked: Missing mandatory Gate 4 Human Authorization Token.",
+            "timestamp": "2026-11-15T09:54:39+00:00"
+        }
+    ],
+    "reviewer": "AUD-008",
+    "review_verdict": "REJECTED",
+    "issues": [],
+    "extra": {
+        "classification": {
+            "category": "ui_ux",
+            "stage": 10,
+            "keywords": [
+                "accessibility",
+                "ui-ux",
+                "wcag"
+            ],
+            "requires_review": true
+        },
+        "assigned_reviewer": "AUD-008"
+    },
+    "review_comments": "Blocked at gateway: Stage 10 code writing blocked: Missing mandatory Gate 4 Human Authorization Token."
+}

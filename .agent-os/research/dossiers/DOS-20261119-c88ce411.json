@@ -1,0 +1,125 @@
+{
+    "dossier_id": "DOS-20261119-c88ce411",
+    "task_id": "TASK-CONTAINER-BLOCKED",
+    "project_identity": "core",
+    "research_depth": "L3",
+    "researched_at": "2026-11-19T11:44:16Z",
+    "expires_at": "2026-11-26T11:44:16Z",
+    "sources_consulted": [],
+    "claims": [],
+    "conflicts_detected": [],
+    "comparison_matrices": [
+        {
+            "comparison_id": "CMP-20261119-a9c0cf",
+            "domain": "general",
+            "evaluated_at": "2026-11-19T11:44:16Z",
+            "candidates": [
+                "solution_a",
+                "solution_b"
+            ],
+            "criteria_weights": {
+                "security_posture": 0.25,
+                "target_compatibility": 0.25,
+                "performance_characteristics": 0.2,
+                "operational_complexity": 0.15,
+                "maintenance_activity": 0.15
+            },
+            "candidate_evaluations": {
+                "solution_a": {
+                    "scores": {
+                        "security_posture": 0.85,
+                        "target_compatibility": 0.9
+                    },
+                    "criterion_breakdown": {
+                        "security_posture": {
+                            "nature": "VERIFIED_FACT",
+                            "score": 0.85,
+                            "detail": "",
+                            "references": []
+                        },
+                        "target_compatibility": {
+                            "nature": "VERIFIED_FACT",
+                            "score": 0.9,
+                            "detail": "",
+                            "references": []
+                        },
+                        "performance_characteristics": {
+                            "nature": "UNAVAILABLE",
+                            "score": null,
+                            "detail": "No verified evidence provided for this criterion."
+                        },
+                        "operational_complexity": {
+                            "nature": "UNAVAILABLE",
+                            "score": null,
+                            "detail": "No verified evidence provided for this criterion."
+                        },
+                        "maintenance_activity": {
+                            "nature": "UNAVAILABLE",
+                            "score": null,
+                            "detail": "No verified evidence provided for this criterion."
+                        }
+                    },
+                    "weighted_score": 0.88,
+                    "pros": [],
+                    "cons": [],
+                    "evidence_references": []
+                },
+                "solution_b": {
+                    "scores": {
+                        "security_posture": 0.85,
+                        "target_compatibility": 0.9
+                    },
+                    "criterion_breakdown": {
+                        "security_posture": {
+                            "nature": "VERIFIED_FACT",
+                            "score": 0.85,
+                            "detail": "",
+                            "references": []
+                        },
+                        "target_compatibility": {
+                            "nature": "VERIFIED_FACT",
+                            "score": 0.9,
+                            "detail": "",
+                            "references": []
+                        },
+                        "performance_characteristics": {
+                            "nature": "UNAVAILABLE",
+                            "score": null,
+                            "detail": "No verified evidence provided for this criterion."
+                        },
+                        "operational_complexity": {
+                            "nature": "UNAVAILABLE",
+                            "score": null,
+                            "detail": "No verified evidence provided for this criterion."
+                        },
+                        "maintenance_activity": {
+                            "nature": "UNAVAILABLE",
+                            "score": null,
+                            "detail": "No verified evidence provided for this criterion."
+                        }
+                    },
+                    "weighted_score": 0.88,
+                    "pros": [],
+                    "cons": [],
+                    "evidence_references": []
+                }
+            },
+            "recommendation": {
+                "selected": "solution_a",
+                "rationale": "Candidate 'solution_a' demonstrated highest weighted score (0.88) across verified evidence criteria.",
+                "rejected_alternatives": [
+                    {
+                        "name": "solution_b",
+                        "rejection_reason": "Weighted score (0.88) lower than selected solution_a (0.88) based on verified evidence."
+                    }
+                ]
+            },
+            "limitations": [],
+            "status": "COMPLETE"
+        }
+    ],
+    "security_findings": [],
+    "recommendations": [],
+    "gate_0_status": "BLOCKED",
+    "dossier_hash": "a42c47d93594aee986e84c543812ebc17916fac46c2d3d1b756e22e3899f27a4"
+}

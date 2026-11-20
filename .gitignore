@@ -1,0 +1,65 @@
+# Universal Agent Operating System (UAOS) - Git Exclusion Rules
+
+# Composer Vendor Dependencies
+/vendor/
+
+# Host Runtime and Mutable Storage Confinement (.agent-os)
+/.agent-os/.secrets/
+/.agent-os/state/
+/.agent-os/authorizations/
+/.agent-os/evidence/
+/.agent-os/reports/
+/.agent-os/config.json
+/.agent-os/project-profile.json
+/.agent-os/*.tmp
+/.agent-os/*.sqlite*
+/.agent-os/*.db*
+
+# Cryptographic Keys, Certificates, and Operational Secrets
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+*.pub
+
+# Local SQLite & Temporary Databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Environment and Credential Configurations
+.env
+.env.*
+!.env.example
+
+# Disposable Test Validation Hosts and Build Artifacts
+/val-*-host/
+/temp/
+/tmp/
+*.tmp
+*.log
+*.zip
+*.tar
+*.tar.gz
+
+# PHPUnit & Tooling Caches
+/.phpunit.result.cache
+/.phpunit.cache/
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS System Metadata
+Thumbs.db
+Desktop.ini
+.DS_Store

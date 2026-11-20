@@ -1,0 +1,34 @@
+{
+    "$schema": "https:\/\/json-schema.org\/draft\/2020-12\/schema",
+    "title": "Agent Specification Schema",
+    "type": "object",
+    "required": [
+        "agent_id",
+        "agent_name",
+        "department",
+        "tier",
+        "mandatory_sections_count"
+    ],
+    "properties": {
+        "agent_id": {
+            "type": "string",
+            "pattern": "^[A-Z]{3,5}-[0-9]{3}$"
+        },
+        "agent_name": {
+            "type": "string"
+        },
+        "department": {
+            "type": "string"
+        },
+        "tier": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+        },
+        "mandatory_sections_count": {
+            "type": "integer",
+            "minimum": 56,
+            "maximum": 56
+        }
+    }
+}

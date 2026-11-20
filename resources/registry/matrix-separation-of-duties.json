@@ -1,0 +1,46 @@
+{
+    "policy_reference": "GOV-DOC-006 (AGENT-SEPARATION-OF-DUTIES.md)",
+    "enforcement": "CONSTITUTIONAL_INVARIANT",
+    "conflict_rules": [
+        {
+            "producing_role": "Chief Software Architect (ARCH-001 \/ Dept A) & Software Architects (Dept C, incl. LARCH-001)",
+            "auditing_role": "independent-architecture-auditor (AUD-001)",
+            "prohibited": "Self-audit of architecture blueprints or ADRs"
+        },
+        {
+            "producing_role": "Laravel & PHP Engineer (Dept D)",
+            "auditing_role": "independent-code-quality-auditor (AUD-002)",
+            "prohibited": "Self-approval of implementation code"
+        },
+        {
+            "producing_role": "Security \/ Cryptography Engineer (Dept F)",
+            "auditing_role": "independent-security-auditor (AUD-003)",
+            "prohibited": "Self-clearance of cryptographic or security implementations"
+        },
+        {
+            "producing_role": "Database Schema Engineer (Dept E)",
+            "auditing_role": "independent-database-auditor (AUD-004)",
+            "prohibited": "Self-approval of database migrations and indexes"
+        },
+        {
+            "producing_role": "UI\/UX & Frontend Engineer (Depts G & H)",
+            "auditing_role": "independent-ui-ux-auditor (AUD-005)",
+            "prohibited": "Self-approval of design system and accessibility compliance"
+        },
+        {
+            "producing_role": "API Endpoint Engineer (Dept I)",
+            "auditing_role": "independent-api-auditor (AUD-006)",
+            "prohibited": "Self-clearance of API contracts and breaking changes"
+        },
+        {
+            "producing_role": "QA & Test Engineer (Dept J)",
+            "auditing_role": "independent-test-suite-auditor (AUD-007)",
+            "prohibited": "Self-audit of test rigor and mutation coverage scores"
+        },
+        {
+            "producing_role": "DevOps & Release Engineer (Dept L)",
+            "auditing_role": "release-readiness-auditor (AUD-008)",
+            "prohibited": "Self-authorization of production deployment without Gate 5 clearance"
+        }
+    ]
+}

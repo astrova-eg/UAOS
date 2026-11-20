@@ -1,0 +1,27 @@
+{
+    "session_id": "sess_20261119_121633_3b862677",
+    "project_id": "core",
+    "task_id": "CLI-TASK-27f15f2d",
+    "agent_id": "LCOR-001",
+    "department_id": "dept-d-laravel-php-engineering",
+    "adapter_id": "cli",
+    "status": "BLOCKED",
+    "summary": "Execution halted: Gate 0 blocked (Gate 0 clearance blocked: Insufficient source quorum: found 0 eligible sources, required 1.)",
+    "duration_seconds": 0,
+    "events_count": 1,
+    "events": [
+        {
+            "timestamp": "2026-11-19T12:16:33+00:00",
+            "operation": "GATE_0_EVALUATED",
+            "target_resource": "rdei://tasks/CLI-TASK-27f15f2d/gate0",
+            "permission_decision": "REJECTED",
+            "details": {
+                "reason": "Gate 0 clearance blocked: Insufficient source quorum: found 0 eligible sources, required 1.",
+                "violations": [
+                    "Insufficient source quorum: found 0 eligible sources, required 1.",
+                    "No claims extracted in research dossier for task requiring depth L1."
+                ]
+            }
+        }
+    ]
+}

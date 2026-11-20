@@ -1,0 +1,2866 @@
+{
+    "total_agents": 112,
+    "generated_at": "2026-11-13T18:38:45+00:00",
+    "agents": [
+        {
+            "id": "A11Y-001",
+            "name": "Accessibility Specialist",
+            "slug": "accessibility-specialist",
+            "department_folder": "G_ui_ux_design",
+            "department_name": "Department G: UI/UX, Design Systems & Usability (DEPT-G)",
+            "specialization": "WCAG 2.1 AA Compliance, Screen Readers & Keyboard Navigation",
+            "role": "Accessibility Specialist",
+            "tier": 3,
+            "specification_path": "agents/G_ui_ux_design/accessibility-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-DOC-001",
+                "SKILL-FILA-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "ACPT-001",
+            "name": "Acceptance Verification Engineer",
+            "slug": "acceptance-verification-engineer",
+            "department_folder": "N_documentation_closure",
+            "department_name": "Department N: Technical Documentation, Knowledge & Closure (DEPT-N)",
+            "specialization": "Acceptance Criteria Verification & Definition of Done Signoff",
+            "role": "Definition of Done Authority",
+            "tier": 4,
+            "specification_path": "agents/N_documentation_closure/acceptance-verification-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "verify_dod",
+                "index_adr",
+                "publish_docs",
+                "issue_closure_certificate"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "ADR-001",
+            "name": "Architecture Decision Recorder",
+            "slug": "architecture-decision-recorder",
+            "department_folder": "N_documentation_closure",
+            "department_name": "Department N: Technical Documentation, Knowledge & Closure (DEPT-N)",
+            "specialization": "ADR Formulation, Indexing & Architectural History Curation",
+            "role": "ADR Curator",
+            "tier": 4,
+            "specification_path": "agents/N_documentation_closure/architecture-decision-recorder.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "verify_dod",
+                "index_adr",
+                "publish_docs",
+                "issue_closure_certificate"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "API-001",
+            "name": "API Architect",
+            "slug": "api-architect",
+            "department_folder": "I_api_integrations",
+            "department_name": "Department I: API & Integrations (DEPT-I)",
+            "specialization": "RESTful & JSON:API Architecture, Versioning & Contract Design",
+            "role": "API Architecture Authority",
+            "tier": 3,
+            "specification_path": "agents/I_api_integrations/api-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "APIDOC-001",
+            "name": "API Documentation Engineer",
+            "slug": "api-documentation-engineer",
+            "department_folder": "N_documentation_closure",
+            "department_name": "Department N: Technical Documentation, Knowledge & Closure (DEPT-N)",
+            "specialization": "OpenAPI / Scalar / Postman Interactive Documentation",
+            "role": "API Documentation Specialist",
+            "tier": 4,
+            "specification_path": "agents/N_documentation_closure/api-documentation-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "verify_dod",
+                "index_adr",
+                "publish_docs",
+                "issue_closure_certificate"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "APIS-001",
+            "name": "API Security Specialist",
+            "slug": "api-security-specialist",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "Token Security (Sanctum/Passport), OAuth2, Rate Limiting & Replays",
+            "role": "API Security Specialist",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/api-security-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "ARCH-001",
+            "name": "Chief Software Architect",
+            "slug": "chief-software-architect",
+            "department_folder": "A_leadership_governance",
+            "department_name": "Department A: Engineering Leadership & Governance (DEPT-A)",
+            "specialization": "Global Software Architecture & System Design Governance",
+            "role": "Master Architect & System Boundary Authority",
+            "tier": 1,
+            "specification_path": "agents/A_leadership_governance/chief-software-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "modify_charter",
+                "approve_adr",
+                "resolve_conflict",
+                "freeze_workflow",
+                "grant_gate_clearance"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-ARCH-001",
+                "SKILL-DB-001",
+                "SKILL-DESIGN-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001"
+            ]
+        },
+        {
+            "id": "ASEC-001",
+            "name": "Authentication Security Specialist",
+            "slug": "authentication-security-specialist",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "Multi-Factor Auth (MFA), Passkeys, WebAuthn & Session Security",
+            "role": "Authentication Specialist",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/authentication-security-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "ATST-001",
+            "name": "API Testing Specialist",
+            "slug": "api-testing-specialist",
+            "department_folder": "J_qa_testing",
+            "department_name": "Department J: Quality Assurance & Testing (DEPT-J)",
+            "specialization": "API Endpoint Regression, Status Code, Payload Validation & Auth Tests",
+            "role": "API Testing Specialist",
+            "tier": 3,
+            "specification_path": "agents/J_qa_testing/api-testing-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "AUD-001",
+            "name": "Independent Architecture Auditor",
+            "slug": "independent-architecture-auditor",
+            "department_folder": "M_independent_audit",
+            "department_name": "Department M: Independent Review & Technical Audit (DEPT-M)",
+            "specialization": "Independent Architecture & Structural Boundary Auditing",
+            "role": "Sovereign Architecture Auditor",
+            "tier": 2,
+            "specification_path": "agents/M_independent_audit/independent-architecture-auditor.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "AUD-002",
+            "name": "Independent Code Quality Auditor",
+            "slug": "independent-code-quality-auditor",
+            "department_folder": "M_independent_audit",
+            "department_name": "Department M: Independent Review & Technical Audit (DEPT-M)",
+            "specialization": "Independent Clean Code, SOLID & Static Analysis (PHPStan)",
+            "role": "Sovereign Code Quality Auditor",
+            "tier": 2,
+            "specification_path": "agents/M_independent_audit/independent-code-quality-auditor.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "AUD-003",
+            "name": "Independent Security Auditor",
+            "slug": "independent-security-auditor",
+            "department_folder": "M_independent_audit",
+            "department_name": "Department M: Independent Review & Technical Audit (DEPT-M)",
+            "specialization": "Hostile Vulnerability, Cryptography & Threat Auditing",
+            "role": "Sovereign Security Auditor",
+            "tier": 2,
+            "specification_path": "agents/M_independent_audit/independent-security-auditor.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "AUD-004",
+            "name": "Independent Database Auditor",
+            "slug": "independent-database-auditor",
+            "department_folder": "M_independent_audit",
+            "department_name": "Department M: Independent Review & Technical Audit (DEPT-M)",
+            "specialization": "Independent Schema, Indexing & Query Integrity Auditing",
+            "role": "Sovereign Database Auditor",
+            "tier": 2,
+            "specification_path": "agents/M_independent_audit/independent-database-auditor.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "AUD-005",
+            "name": "Independent UI/UX Auditor",
+            "slug": "independent-ui-ux-auditor",
+            "department_folder": "M_independent_audit",
+            "department_name": "Department M: Independent Review & Technical Audit (DEPT-M)",
+            "specialization": "Independent Visual Consistency & Accessibility (WCAG) Auditing",
+            "role": "Sovereign UI/UX Auditor",
+            "tier": 2,
+            "specification_path": "agents/M_independent_audit/independent-ui-ux-auditor.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "AUD-006",
+            "name": "Independent API Auditor",
+            "slug": "independent-api-auditor",
+            "department_folder": "M_independent_audit",
+            "department_name": "Department M: Independent Review & Technical Audit (DEPT-M)",
+            "specialization": "Independent REST/JSON:API Contract & Versioning Auditing",
+            "role": "Sovereign API Auditor",
+            "tier": 2,
+            "specification_path": "agents/M_independent_audit/independent-api-auditor.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "AUD-007",
+            "name": "Independent Test Suite Auditor",
+            "slug": "independent-test-suite-auditor",
+            "department_folder": "M_independent_audit",
+            "department_name": "Department M: Independent Review & Technical Audit (DEPT-M)",
+            "specialization": "Independent Test Rigor, Mutation Score & Coverage Auditing",
+            "role": "Sovereign Test Suite Auditor",
+            "tier": 2,
+            "specification_path": "agents/M_independent_audit/independent-test-suite-auditor.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "AUD-008",
+            "name": "Release Readiness Auditor",
+            "slug": "release-readiness-auditor",
+            "department_folder": "M_independent_audit",
+            "department_name": "Department M: Independent Review & Technical Audit (DEPT-M)",
+            "specialization": "Independent Production Gatekeeper & Deployment Clearance Auditing",
+            "role": "Sovereign Release Gatekeeper",
+            "tier": 2,
+            "specification_path": "agents/M_independent_audit/release-readiness-auditor.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "AUTH-001",
+            "name": "Authorization & Policy Engineer",
+            "slug": "authorization-policy-engineer",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "Gates, Policies, Role-Based Access Control (RBAC)",
+            "role": "Policy & Permissions Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/authorization-policy-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "BKP-001",
+            "name": "Backup & Recovery Engineer",
+            "slug": "backup-recovery-engineer",
+            "department_folder": "E_database_engineering",
+            "department_name": "Department E: Database & Data Engineering (DEPT-E)",
+            "specialization": "Point-In-Time Recovery, Automated Dumps & Disaster Recovery",
+            "role": "Backup & Recovery Specialist",
+            "tier": 3,
+            "specification_path": "agents/E_database_engineering/backup-recovery-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "BLAD-001",
+            "name": "Blade View Engineer",
+            "slug": "blade-view-engineer",
+            "department_folder": "H_frontend_engineering",
+            "department_name": "Department H: Frontend Engineering (DEPT-H)",
+            "specialization": "Blade Components, Layouts, Directives & Server-Side Rendering",
+            "role": "Blade Specialist",
+            "tier": 3,
+            "specification_path": "agents/H_frontend_engineering/blade-view-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-TEST-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "CCHE-001",
+            "name": "Caching Strategy Engineer",
+            "slug": "caching-strategy-engineer",
+            "department_folder": "K_performance_scalability",
+            "department_name": "Department K: Performance, Scalability & Reliability (DEPT-K)",
+            "specialization": "Redis/Memcached Topology, Cache Invalidation, Tags & Atomic Locks",
+            "role": "Caching Architecture Specialist",
+            "tier": 2,
+            "specification_path": "agents/K_performance_scalability/caching-strategy-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "CHENG-001",
+            "name": "Chief Engineering Officer",
+            "slug": "chief-engineering-officer",
+            "department_folder": "A_leadership_governance",
+            "department_name": "Department A: Engineering Leadership & Governance (DEPT-A)",
+            "specialization": "Executive Engineering Leadership & Strategic Architecture",
+            "role": "Head of Engineering Organization & Supreme Technical Authority",
+            "tier": 1,
+            "specification_path": "agents/A_leadership_governance/chief-engineering-officer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "modify_charter",
+                "approve_adr",
+                "resolve_conflict",
+                "freeze_workflow",
+                "grant_gate_clearance"
+            ],
+            "skills": [
+                "SKILL-ARCH-001",
+                "SKILL-DESIGN-001",
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "CLOS-001",
+            "name": "System Closure Manager",
+            "slug": "system-closure-manager",
+            "department_folder": "N_documentation_closure",
+            "department_name": "Department N: Technical Documentation, Knowledge & Closure (DEPT-N)",
+            "specialization": "Final Phase Signoff, Delivery Packaging & Operational Handover",
+            "role": "System Closure Authority",
+            "tier": 4,
+            "specification_path": "agents/N_documentation_closure/system-closure-manager.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "verify_dod",
+                "index_adr",
+                "publish_docs",
+                "issue_closure_certificate"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "COMP-001",
+            "name": "Security Compliance Auditor",
+            "slug": "security-compliance-auditor",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "GDPR, HIPAA, OWASP Top 10 & Regulatory Compliance Auditing",
+            "role": "Compliance & Audit Specialist",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/security-compliance-auditor.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "CONF-001",
+            "name": "Engineering Conflict Resolution Specialist",
+            "slug": "conflict-resolution-specialist",
+            "department_folder": "A_leadership_governance",
+            "department_name": "Department A: Engineering Leadership & Governance (DEPT-A)",
+            "specialization": "Technical Dispute Arbitration, Trade-Off Mediation & Consensus",
+            "role": "Conflict Arbitrator",
+            "tier": 1,
+            "specification_path": "agents/A_leadership_governance/conflict-resolution-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "modify_charter",
+                "approve_adr",
+                "resolve_conflict",
+                "freeze_workflow",
+                "grant_gate_clearance"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-REVIEW-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "CONF-002",
+            "name": "Configuration & Environment Engineer",
+            "slug": "config-environment-engineer",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "Configuration Caching, Environment Variables & Config Isolation",
+            "role": "Configuration Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/config-environment-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "COV-001",
+            "name": "Test Automation Coverage Auditor",
+            "slug": "test-automation-coverage-auditor",
+            "department_folder": "J_qa_testing",
+            "department_name": "Department J: Quality Assurance & Testing (DEPT-J)",
+            "specialization": "Code Coverage Metrics, Mutation Testing (Infection) & Gap Analysis",
+            "role": "Coverage & Mutation Auditor",
+            "tier": 3,
+            "specification_path": "agents/J_qa_testing/test-automation-coverage-auditor.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "CREQ-001",
+            "name": "Controller & Request Engineer",
+            "slug": "controller-request-engineer",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "Single-Responsibility Actions, FormRequests & Input Sanitization",
+            "role": "Controller & Action Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/controller-request-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DESIGN-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "CRYP-001",
+            "name": "Cryptography Engineer",
+            "slug": "cryptography-engineer",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "Envelope Encryption, AES-256-GCM, Hash Functions & HMAC Signatures",
+            "role": "Cryptography Specialist",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/cryptography-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "CSS-001",
+            "name": "Tailwind CSS Specialist",
+            "slug": "tailwind-css-specialist",
+            "department_folder": "H_frontend_engineering",
+            "department_name": "Department H: Frontend Engineering (DEPT-H)",
+            "specialization": "Tailwind CSS Architecture, RTL Support & Responsive Layouts",
+            "role": "Tailwind & RTL Specialist",
+            "tier": 3,
+            "specification_path": "agents/H_frontend_engineering/tailwind-css-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-TEST-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "CTST-001",
+            "name": "API Contract Testing Specialist",
+            "slug": "api-contract-testing-specialist",
+            "department_folder": "I_api_integrations",
+            "department_name": "Department I: API & Integrations (DEPT-I)",
+            "specialization": "OpenAPI / Swagger 3.1 Schemas, Prism Mocks & Contract Validation",
+            "role": "Contract Testing Specialist",
+            "tier": 3,
+            "specification_path": "agents/I_api_integrations/api-contract-testing-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "DATA-001",
+            "name": "Data Integrity Governor",
+            "slug": "data-integrity-governor",
+            "department_folder": "E_database_engineering",
+            "department_name": "Department E: Database & Data Engineering (DEPT-E)",
+            "specialization": "Foreign Key Constraints, Check Constraints & Historical Auditing",
+            "role": "Data Integrity & Audit Specialist",
+            "tier": 3,
+            "specification_path": "agents/E_database_engineering/data-integrity-governor.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "DBA-001",
+            "name": "Database Architect",
+            "slug": "database-architect",
+            "department_folder": "E_database_engineering",
+            "department_name": "Department E: Database & Data Engineering (DEPT-E)",
+            "specialization": "Relational Schema Modeling, Normalization & Storage Engines",
+            "role": "Database Architecture Authority",
+            "tier": 3,
+            "specification_path": "agents/E_database_engineering/database-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "DDD-001",
+            "name": "Domain-Driven Design Architect",
+            "slug": "domain-driven-design-architect",
+            "department_folder": "C_architecture_design",
+            "department_name": "Department C: Software Architecture & Design (DEPT-C)",
+            "specialization": "Bounded Contexts, Aggregates & Domain Events",
+            "role": "Domain Modeling Architect",
+            "tier": 2,
+            "specification_path": "agents/C_architecture_design/domain-driven-design-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-ARCH-001",
+                "SKILL-DB-001",
+                "SKILL-DESIGN-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "DEBT-001",
+            "name": "Technical Debt Architect",
+            "slug": "technical-debt-architect",
+            "department_folder": "C_architecture_design",
+            "department_name": "Department C: Software Architecture & Design (DEPT-C)",
+            "specialization": "Legacy Modernization, Refactoring Roadmaps & Debt Remediation",
+            "role": "Refactoring & Legacy Modernizer",
+            "tier": 2,
+            "specification_path": "agents/C_architecture_design/technical-debt-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-ARCH-001",
+                "SKILL-DB-001",
+                "SKILL-DESIGN-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "DECM-001",
+            "name": "Engineering Decision Manager",
+            "slug": "engineering-decision-manager",
+            "department_folder": "A_leadership_governance",
+            "department_name": "Department A: Engineering Leadership & Governance (DEPT-A)",
+            "specialization": "ADR Life-Cycle, Decision Records & Consensus Architecture",
+            "role": "Architectural Decision Authority",
+            "tier": 1,
+            "specification_path": "agents/A_leadership_governance/engineering-decision-manager.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "modify_charter",
+                "approve_adr",
+                "resolve_conflict",
+                "freeze_workflow",
+                "grant_gate_clearance"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-REVIEW-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "DEPSEC-001",
+            "name": "Dependency & Vulnerability Specialist",
+            "slug": "dependency-vulnerability-specialist",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "Supply Chain Security, Composer Audit, CVE Analysis",
+            "role": "Supply Chain Security Specialist",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/dependency-vulnerability-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "DISC-001",
+            "name": "Project Discovery Specialist",
+            "slug": "project-discovery-specialist",
+            "department_folder": "B_project_discovery",
+            "department_name": "Department B: Project Discovery & Requirements Engineering (DEPT-B)",
+            "specialization": "Greenfield Discovery & Brownfield Codebase Profiling",
+            "role": "Codebase Explorer & Profiler",
+            "tier": 3,
+            "specification_path": "agents/B_project_discovery/project-discovery-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "DIST-001",
+            "name": "Distributed Systems Architect",
+            "slug": "distributed-systems-architect",
+            "department_folder": "C_architecture_design",
+            "department_name": "Department C: Software Architecture & Design (DEPT-C)",
+            "specialization": "Distributed Caching, Service Discovery & Resilience",
+            "role": "Distributed Architecture Specialist",
+            "tier": 2,
+            "specification_path": "agents/C_architecture_design/distributed-systems-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-ARCH-001",
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "DOC-001",
+            "name": "Technical Documentation Engineer",
+            "slug": "technical-documentation-engineer",
+            "department_folder": "N_documentation_closure",
+            "department_name": "Department N: Technical Documentation, Knowledge & Closure (DEPT-N)",
+            "specialization": "Architecture & Technical Reference Documentation",
+            "role": "Technical Documentation Specialist",
+            "tier": 4,
+            "specification_path": "agents/N_documentation_closure/technical-documentation-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "verify_dod",
+                "index_adr",
+                "publish_docs",
+                "issue_closure_certificate"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "DSYS-001",
+            "name": "Design System Architect",
+            "slug": "design-system-architect",
+            "department_folder": "G_ui_ux_design",
+            "department_name": "Department G: UI/UX, Design Systems & Usability (DEPT-G)",
+            "specialization": "Design Tokens, Reusable UI Component Systems & Color Palettes",
+            "role": "Design System Specialist",
+            "tier": 3,
+            "specification_path": "agents/G_ui_ux_design/design-system-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-DOC-001",
+                "SKILL-FILA-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "E2E-001",
+            "name": "Browser E2E Testing Specialist",
+            "slug": "browser-e2e-testing-specialist",
+            "department_folder": "J_qa_testing",
+            "department_name": "Department J: Quality Assurance & Testing (DEPT-J)",
+            "specialization": "Laravel Dusk / Playwright Browser Automation & UI Smoke Tests",
+            "role": "Browser E2E Specialist",
+            "tier": 3,
+            "specification_path": "agents/J_qa_testing/browser-e2e-testing-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "EDDA-001",
+            "name": "Event-Driven Architect",
+            "slug": "event-driven-architect",
+            "department_folder": "C_architecture_design",
+            "department_name": "Department C: Software Architecture & Design (DEPT-C)",
+            "specialization": "Asynchronous Events, Event Sourcing & Messaging Buses",
+            "role": "Event Bus & Messaging Architect",
+            "tier": 2,
+            "specification_path": "agents/C_architecture_design/event-driven-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-ARCH-001",
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "ELOQ-001",
+            "name": "Eloquent Persistence Engineer",
+            "slug": "eloquent-persistence-engineer",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "Eloquent ORM, Relationships, Scopes & Casting",
+            "role": "Eloquent Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/eloquent-persistence-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "ENV-001",
+            "name": "Environment Secrets Engineer",
+            "slug": "environment-secrets-engineer",
+            "department_folder": "L_devops_infrastructure",
+            "department_name": "Department L: DevOps, Infrastructure & Release (DEPT-L)",
+            "specialization": "Environment Parity, Dotenv Security & Configuration Isolation",
+            "role": "Environment & Secrets Specialist",
+            "tier": 2,
+            "specification_path": "agents/L_devops_infrastructure/environment-secrets-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DEVOPS-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "EP-001",
+            "name": "API Endpoint Engineer",
+            "slug": "api-endpoint-engineer",
+            "department_folder": "I_api_integrations",
+            "department_name": "Department I: API & Integrations (DEPT-I)",
+            "specialization": "API Resources, Response Transformers & HTTP Status Consistency",
+            "role": "API Endpoint Specialist",
+            "tier": 3,
+            "specification_path": "agents/I_api_integrations/api-endpoint-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "ETL-001",
+            "name": "ETL & Data Migration Specialist",
+            "slug": "etl-data-migration-specialist",
+            "department_folder": "E_database_engineering",
+            "department_name": "Department E: Database & Data Engineering (DEPT-E)",
+            "specialization": "Data Seeding, ETL Pipelines & Legacy Data Migrations",
+            "role": "ETL & Data Seeding Specialist",
+            "tier": 3,
+            "specification_path": "agents/E_database_engineering/etl-data-migration-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "EVNT-001",
+            "name": "Event & Notification Engineer",
+            "slug": "event-notification-engineer",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "Domain Events, Listeners, Multi-Channel Notifications",
+            "role": "Events & Notifications Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/event-notification-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "EVNT-002",
+            "name": "Traceability & Evidence Manager",
+            "slug": "traceability-evidence-manager",
+            "department_folder": "N_documentation_closure",
+            "department_name": "Department N: Technical Documentation, Knowledge & Closure (DEPT-N)",
+            "specialization": "Requirements-to-Code Traceability & Audit Trail Curation",
+            "role": "Traceability & Audit Trail Specialist",
+            "tier": 4,
+            "specification_path": "agents/N_documentation_closure/traceability-evidence-manager.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "verify_dod",
+                "index_adr",
+                "publish_docs",
+                "issue_closure_certificate"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "EXCP-001",
+            "name": "Exception & Observability Engineer",
+            "slug": "exception-observability-engineer",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "Exception Hierarchies, Telemetry, Logging & Context Propagation",
+            "role": "Error & Observability Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/exception-observability-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-ERR-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "FARCH-001",
+            "name": "Frontend Architect",
+            "slug": "frontend-architect",
+            "department_folder": "H_frontend_engineering",
+            "department_name": "Department H: Frontend Engineering (DEPT-H)",
+            "specialization": "Client-Side Architecture, Bundler Config (Vite) & State Management",
+            "role": "Frontend Architecture Authority",
+            "tier": 3,
+            "specification_path": "agents/H_frontend_engineering/frontend-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-FILA-001",
+                "SKILL-REACT-001",
+                "SKILL-TEST-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "FEAS-001",
+            "name": "Feasibility Researcher",
+            "slug": "feasibility-researcher",
+            "department_folder": "B_project_discovery",
+            "department_name": "Department B: Project Discovery & Requirements Engineering (DEPT-B)",
+            "specialization": "Technical Feasibility, Proof-of-Concept & Spike Studies",
+            "role": "Feasibility & Spike Researcher",
+            "tier": 3,
+            "specification_path": "agents/B_project_discovery/feasibility-researcher.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "FILA-001",
+            "name": "Filament Engineer",
+            "slug": "filament-engineer",
+            "department_folder": "H_frontend_engineering",
+            "department_name": "Department H: Frontend Engineering (DEPT-H)",
+            "specialization": "Filament Panels, Resources, Widgets, Infolists & Actions",
+            "role": "Filament Specialist",
+            "tier": 3,
+            "specification_path": "agents/H_frontend_engineering/filament-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-FILA-001",
+                "SKILL-REACT-001",
+                "SKILL-TEST-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "FILE-001",
+            "name": "File Upload Security Specialist",
+            "slug": "file-upload-security-specialist",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "MIME Validation, Antivirus Integration & Isolated Storage",
+            "role": "File Security Specialist",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/file-upload-security-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "FPERF-001",
+            "name": "Frontend Performance Engineer",
+            "slug": "frontend-performance-engineer",
+            "department_folder": "H_frontend_engineering",
+            "department_name": "Department H: Frontend Engineering (DEPT-H)",
+            "specialization": "Core Web Vitals, Asset Optimization, Code Splitting & Lazy Loading",
+            "role": "Frontend Performance Specialist",
+            "tier": 3,
+            "specification_path": "agents/H_frontend_engineering/frontend-performance-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-FILA-001",
+                "SKILL-REACT-001",
+                "SKILL-TEST-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "FTST-001",
+            "name": "Feature Testing Specialist",
+            "slug": "feature-testing-specialist",
+            "department_folder": "J_qa_testing",
+            "department_name": "Department J: Quality Assurance & Testing (DEPT-J)",
+            "specialization": "Laravel HTTP Feature Tests, Session, Auth & Database Assertions",
+            "role": "Feature Testing Specialist",
+            "tier": 3,
+            "specification_path": "agents/J_qa_testing/feature-testing-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "GOV-001",
+            "name": "Engineering Governance Manager",
+            "slug": "engineering-governance-manager",
+            "department_folder": "A_leadership_governance",
+            "department_name": "Department A: Engineering Leadership & Governance (DEPT-A)",
+            "specialization": "Engineering Governance, Constitutional Compliance & Authorization",
+            "role": "Constitutional Gatekeeper",
+            "tier": 1,
+            "specification_path": "agents/A_leadership_governance/engineering-governance-manager.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "modify_charter",
+                "approve_adr",
+                "resolve_conflict",
+                "freeze_workflow",
+                "grant_gate_clearance"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-REVIEW-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "HEX-001",
+            "name": "Modular Hexagonal Architect",
+            "slug": "modular-hexagonal-architect",
+            "department_folder": "C_architecture_design",
+            "department_name": "Department C: Software Architecture & Design (DEPT-C)",
+            "specialization": "Clean Architecture, Ports & Adapters Isolation",
+            "role": "Hexagonal & Ports Architect",
+            "tier": 2,
+            "specification_path": "agents/C_architecture_design/modular-hexagonal-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-ARCH-001",
+                "SKILL-DB-001",
+                "SKILL-DESIGN-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "INF-001",
+            "name": "Information Architect",
+            "slug": "information-architect",
+            "department_folder": "G_ui_ux_design",
+            "department_name": "Department G: UI/UX, Design Systems & Usability (DEPT-G)",
+            "specialization": "Information Hierarchy, Taxonomy & Navigation Systems",
+            "role": "Information Architecture Specialist",
+            "tier": 3,
+            "specification_path": "agents/G_ui_ux_design/information-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-DOC-001",
+                "SKILL-FILA-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "INTG-001",
+            "name": "Third-Party Integration Engineer",
+            "slug": "third-party-integration-engineer",
+            "department_folder": "I_api_integrations",
+            "department_name": "Department I: API & Integrations (DEPT-I)",
+            "specialization": "External Gateways, HTTP Client Wrappers, Retries & Circuit Breakers",
+            "role": "Integration Specialist",
+            "tier": 3,
+            "specification_path": "agents/I_api_integrations/third-party-integration-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "IREL-001",
+            "name": "Integration Reliability Engineer",
+            "slug": "integration-reliability-engineer",
+            "department_folder": "I_api_integrations",
+            "department_name": "Department I: API & Integrations (DEPT-I)",
+            "specialization": "Fallback Handlers, Dead Letter Queues & Third-Party Outage Resilience",
+            "role": "Integration Reliability Specialist",
+            "tier": 3,
+            "specification_path": "agents/I_api_integrations/integration-reliability-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "ITST-001",
+            "name": "Integration Testing Specialist",
+            "slug": "integration-testing-specialist",
+            "department_folder": "J_qa_testing",
+            "department_name": "Department J: Quality Assurance & Testing (DEPT-J)",
+            "specialization": "End-to-End Service Integrations, Jobs, Queues & Event Flow Tests",
+            "role": "Integration Testing Specialist",
+            "tier": 3,
+            "specification_path": "agents/J_qa_testing/integration-testing-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "KEY-001",
+            "name": "Key Management Specialist",
+            "slug": "key-management-specialist",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "KMS/Vault Integration, Master Key Rotation & Hardware Security",
+            "role": "Key Lifecycle Specialist",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/key-management-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "LARCH-001",
+            "name": "Laravel System Architect",
+            "slug": "laravel-system-architect",
+            "department_folder": "C_architecture_design",
+            "department_name": "Department C: Software Architecture & Design (DEPT-C)",
+            "specialization": "Laravel Application Architecture & Modular Monolith Design",
+            "role": "Laravel Architecture Authority",
+            "tier": 2,
+            "specification_path": "agents/C_architecture_design/laravel-system-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-ARCH-001",
+                "SKILL-DB-001",
+                "SKILL-DESIGN-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "LCOR-001",
+            "name": "Laravel Core Engineer",
+            "slug": "laravel-core-engineer",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "Service Container, Service Providers & Lifecycle",
+            "role": "Laravel Core Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/laravel-core-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DESIGN-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "LIVE-001",
+            "name": "Livewire Engineer",
+            "slug": "livewire-engineer",
+            "department_folder": "H_frontend_engineering",
+            "department_name": "Department H: Frontend Engineering (DEPT-H)",
+            "specialization": "Livewire 3 Components, Reactive Lifecycle & Real-Time DOM Diffing",
+            "role": "Livewire 3 Specialist",
+            "tier": 3,
+            "specification_path": "agents/H_frontend_engineering/livewire-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-FILA-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-TEST-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "LSEC-001",
+            "name": "Laravel Security Specialist",
+            "slug": "laravel-security-specialist",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "Laravel Framework Security (CSRF, XSS, Session Fixation, Headers)",
+            "role": "Laravel Security Specialist",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/laravel-security-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "MIGR-001",
+            "name": "Migration Schema Engineer",
+            "slug": "migration-schema-engineer",
+            "department_folder": "E_database_engineering",
+            "department_name": "Department E: Database & Data Engineering (DEPT-E)",
+            "specialization": "Zero-Downtime Migrations, Schema Evolution & Rollback Safety",
+            "role": "Migration & DDL Specialist",
+            "tier": 3,
+            "specification_path": "agents/E_database_engineering/migration-schema-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "MON-001",
+            "name": "Monitoring & Telemetry Engineer",
+            "slug": "monitoring-telemetry-engineer",
+            "department_folder": "L_devops_infrastructure",
+            "department_name": "Department L: DevOps, Infrastructure & Release (DEPT-L)",
+            "specialization": "Prometheus, Grafana, OpenTelemetry, Health Checks & Alerting",
+            "role": "Telemetry & Monitoring Specialist",
+            "tier": 2,
+            "specification_path": "agents/L_devops_infrastructure/monitoring-telemetry-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DEVOPS-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "MTDB-001",
+            "name": "Multi-Tenant Data Engineer",
+            "slug": "multi-tenant-data-engineer",
+            "department_folder": "E_database_engineering",
+            "department_name": "Department E: Database & Data Engineering (DEPT-E)",
+            "specialization": "Tenant Data Partitioning (Schema/DB/Column Scoped)",
+            "role": "Multi-Tenant Database Specialist",
+            "tier": 3,
+            "specification_path": "agents/E_database_engineering/multi-tenant-data-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "MTEN-001",
+            "name": "Multi-Tenant Architect",
+            "slug": "multi-tenant-architect",
+            "department_folder": "C_architecture_design",
+            "department_name": "Department C: Software Architecture & Design (DEPT-C)",
+            "specialization": "Multi-Tenant Partitioning, Tenant Scoping & Isolation",
+            "role": "Multi-Tenancy Specialist",
+            "tier": 2,
+            "specification_path": "agents/C_architecture_design/multi-tenant-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-ARCH-001",
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "MTSEC-001",
+            "name": "Multi-Tenant Security Specialist",
+            "slug": "multi-tenant-security-specialist",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "Tenant Isolation Defense, Cross-Tenant Leakage Prevention",
+            "role": "Tenancy Security Specialist",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/multi-tenant-security-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "OPS-001",
+            "name": "DevOps Architect",
+            "slug": "devops-architect",
+            "department_folder": "L_devops_infrastructure",
+            "department_name": "Department L: DevOps, Infrastructure & Release (DEPT-L)",
+            "specialization": "Environment Architecture, Infrastructure as Code & Operational Standards",
+            "role": "DevOps Architecture Authority",
+            "tier": 2,
+            "specification_path": "agents/L_devops_infrastructure/devops-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DEVOPS-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "ORCH-001",
+            "name": "Engineering Workflow Orchestrator",
+            "slug": "workflow-orchestrator",
+            "department_folder": "A_leadership_governance",
+            "department_name": "Department A: Engineering Leadership & Governance (DEPT-A)",
+            "specialization": "14-Stage Lifecycle Orchestration & Task Routing",
+            "role": "Process & Workflow Master",
+            "tier": 1,
+            "specification_path": "agents/A_leadership_governance/workflow-orchestrator.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "modify_charter",
+                "approve_adr",
+                "resolve_conflict",
+                "freeze_workflow",
+                "grant_gate_clearance"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-REVIEW-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "PANEL-001",
+            "name": "Admin Panel UX Specialist",
+            "slug": "admin-panel-ux-specialist",
+            "department_folder": "G_ui_ux_design",
+            "department_name": "Department G: UI/UX, Design Systems & Usability (DEPT-G)",
+            "specialization": "Data Tables, Bulk Actions, Complex Filters & Medical/Admin Forms",
+            "role": "Admin Panel Specialist",
+            "tier": 3,
+            "specification_path": "agents/G_ui_ux_design/admin-panel-ux-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-DOC-001",
+                "SKILL-FILA-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "PERF-001",
+            "name": "Performance Architect",
+            "slug": "performance-architect",
+            "department_folder": "K_performance_scalability",
+            "department_name": "Department K: Performance, Scalability & Reliability (DEPT-K)",
+            "specialization": "Full-Stack Profiling, Bottleneck Detection & Benchmarking",
+            "role": "Performance Architecture Authority",
+            "tier": 2,
+            "specification_path": "agents/K_performance_scalability/performance-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "PHP-001",
+            "name": "PHP Language Specialist",
+            "slug": "php-language-specialist",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "Modern PHP 8.2+ Advanced Typing, Enums & Concurrency",
+            "role": "PHP Core Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/php-language-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DESIGN-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "PIPE-001",
+            "name": "CI/CD Pipeline Engineer",
+            "slug": "cicd-pipeline-engineer",
+            "department_folder": "L_devops_infrastructure",
+            "department_name": "Department L: DevOps, Infrastructure & Release (DEPT-L)",
+            "specialization": "GitHub Actions, Automated Testing & Zero-Downtime Deployment",
+            "role": "CI/CD Pipeline Specialist",
+            "tier": 2,
+            "specification_path": "agents/L_devops_infrastructure/cicd-pipeline-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DEVOPS-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "PKG-001",
+            "name": "Package & Composer Engineer",
+            "slug": "package-composer-engineer",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "Composer Monorepos, Custom Laravel Packages & Service Autodiscovery",
+            "role": "Packaging & Composer Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/package-composer-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "QA-001",
+            "name": "QA Architect",
+            "slug": "qa-architect",
+            "department_folder": "J_qa_testing",
+            "department_name": "Department J: Quality Assurance & Testing (DEPT-J)",
+            "specialization": "Master Test Strategy, Test Pyramid & Quality Assurance Governance",
+            "role": "QA Architecture Authority",
+            "tier": 3,
+            "specification_path": "agents/J_qa_testing/qa-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "QGOV-001",
+            "name": "Quality Governance Manager",
+            "slug": "quality-governance-manager",
+            "department_folder": "A_leadership_governance",
+            "department_name": "Department A: Engineering Leadership & Governance (DEPT-A)",
+            "specialization": "Quality Metrics, Static Analysis Thresholds & Definition of Done",
+            "role": "Quality Standards Enforcer",
+            "tier": 1,
+            "specification_path": "agents/A_leadership_governance/quality-governance-manager.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "modify_charter",
+                "approve_adr",
+                "resolve_conflict",
+                "freeze_workflow",
+                "grant_gate_clearance"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-REVIEW-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "QJOB-001",
+            "name": "Queue & Job Engineer",
+            "slug": "queue-job-engineer",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "Asynchronous Queues, Workers, Batching & Retries",
+            "role": "Queue Architecture Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/queue-job-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-QUEUE-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "QP-001",
+            "name": "Query Performance Engineer",
+            "slug": "query-performance-engineer",
+            "department_folder": "E_database_engineering",
+            "department_name": "Department E: Database & Data Engineering (DEPT-E)",
+            "specialization": "Query Tuning, Composite Indexes & N+1 Query Elimination",
+            "role": "Query Optimization Specialist",
+            "tier": 3,
+            "specification_path": "agents/E_database_engineering/query-performance-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "QTHR-001",
+            "name": "Queue Throughput Engineer",
+            "slug": "queue-throughput-engineer",
+            "department_folder": "K_performance_scalability",
+            "department_name": "Department K: Performance, Scalability & Reliability (DEPT-K)",
+            "specialization": "Worker Scaling, Horizon Metrics, Priority Queues & Memory Leaks",
+            "role": "Queue Performance Specialist",
+            "tier": 2,
+            "specification_path": "agents/K_performance_scalability/queue-throughput-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "RCT-001",
+            "name": "React Frontend Engineer",
+            "slug": "react-frontend-engineer",
+            "department_folder": "H_frontend_engineering",
+            "department_name": "Department H: Frontend Engineering (DEPT-H)",
+            "specialization": "React 18+, TypeScript, Hooks, Inertia.js & SPA Integration",
+            "role": "React & TypeScript Specialist",
+            "tier": 3,
+            "specification_path": "agents/H_frontend_engineering/react-frontend-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-FILA-001",
+                "SKILL-REACT-001",
+                "SKILL-TEST-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "REGR-001",
+            "name": "Regression Testing Engineer",
+            "slug": "regression-testing-engineer",
+            "department_folder": "J_qa_testing",
+            "department_name": "Department J: Quality Assurance & Testing (DEPT-J)",
+            "specialization": "Regression Suites, Impacted Area Testing & Continuous Verification",
+            "role": "Regression Testing Specialist",
+            "tier": 3,
+            "specification_path": "agents/J_qa_testing/regression-testing-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "REL-001",
+            "name": "Release Manager",
+            "slug": "release-manager",
+            "department_folder": "L_devops_infrastructure",
+            "department_name": "Department L: DevOps, Infrastructure & Release (DEPT-L)",
+            "specialization": "Semantic Versioning, Changelogs, Release Tagging & Gatekeeping",
+            "role": "Release Management Specialist",
+            "tier": 2,
+            "specification_path": "agents/L_devops_infrastructure/release-manager.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DEVOPS-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "REQ-001",
+            "name": "Requirements Engineer",
+            "slug": "requirements-engineer",
+            "department_folder": "B_project_discovery",
+            "department_name": "Department B: Project Discovery & Requirements Engineering (DEPT-B)",
+            "specialization": "Functional & Non-Functional Specification Authoring",
+            "role": "Requirements Author",
+            "tier": 3,
+            "specification_path": "agents/B_project_discovery/requirements-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "RISK-001",
+            "name": "Dependency & Risk Analyst",
+            "slug": "dependency-risk-analyst",
+            "department_folder": "B_project_discovery",
+            "department_name": "Department B: Project Discovery & Requirements Engineering (DEPT-B)",
+            "specialization": "Dependency Trees, Composer Vulnerabilities & Risk Assessment",
+            "role": "Risk & Dependency Assessor",
+            "tier": 3,
+            "specification_path": "agents/B_project_discovery/dependency-risk-analyst.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "RMW-001",
+            "name": "Routing & Middleware Engineer",
+            "slug": "routing-middleware-engineer",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "HTTP Pipeline, Routing Architecture & Middleware Stacks",
+            "role": "Pipeline & Routing Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/routing-middleware-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "ROLL-001",
+            "name": "Rollback & Recovery Specialist",
+            "slug": "rollback-recovery-specialist",
+            "department_folder": "L_devops_infrastructure",
+            "department_name": "Department L: DevOps, Infrastructure & Release (DEPT-L)",
+            "specialization": "Disaster Recovery, Blue/Green & Canary Rollback Automation",
+            "role": "Rollback & Disaster Recovery Specialist",
+            "tier": 2,
+            "specification_path": "agents/L_devops_infrastructure/rollback-recovery-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DEVOPS-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "ROPT-001",
+            "name": "Laravel Runtime Optimizer",
+            "slug": "laravel-runtime-optimizer",
+            "department_folder": "K_performance_scalability",
+            "department_name": "Department K: Performance, Scalability & Reliability (DEPT-K)",
+            "specialization": "OPcache, JIT, Config/Route/View Caching & Octane Tuning",
+            "role": "Runtime Optimization Specialist",
+            "tier": 2,
+            "specification_path": "agents/K_performance_scalability/laravel-runtime-optimizer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "RSL-001",
+            "name": "Concurrency & Resilience Engineer",
+            "slug": "concurrency-resilience-engineer",
+            "department_folder": "K_performance_scalability",
+            "department_name": "Department K: Performance, Scalability & Reliability (DEPT-K)",
+            "specialization": "Distributed Locks, Race Condition Defense & Rate Throttling",
+            "role": "Resilience Specialist",
+            "tier": 2,
+            "specification_path": "agents/K_performance_scalability/concurrency-resilience-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-QUEUE-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "RSRC-001",
+            "name": "Resource Optimization Engineer",
+            "slug": "resource-optimization-engineer",
+            "department_folder": "K_performance_scalability",
+            "department_name": "Department K: Performance, Scalability & Reliability (DEPT-K)",
+            "specialization": "Memory Footprint Reduction, Garbage Collection & File Streams",
+            "role": "Resource Optimization Specialist",
+            "tier": 2,
+            "specification_path": "agents/K_performance_scalability/resource-optimization-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "RVAL-001",
+            "name": "Requirements Validation Specialist",
+            "slug": "requirements-validation-specialist",
+            "department_folder": "B_project_discovery",
+            "department_name": "Department B: Project Discovery & Requirements Engineering (DEPT-B)",
+            "specialization": "Requirements Verification, Ambiguity Elimination & Gate 1 Signoff",
+            "role": "Requirements Validator & Gate 1 Authority",
+            "tier": 3,
+            "specification_path": "agents/B_project_discovery/requirements-validation-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "SCAL-001",
+            "name": "Scalability Architect",
+            "slug": "scalability-architect",
+            "department_folder": "C_architecture_design",
+            "department_name": "Department C: Software Architecture & Design (DEPT-C)",
+            "specialization": "High-Throughput, Horizontal Scaling & Load Balancing",
+            "role": "Elasticity & High-Load Architect",
+            "tier": 2,
+            "specification_path": "agents/C_architecture_design/scalability-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-ARCH-001",
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "SCOD-001",
+            "name": "Secure Coding Engineer",
+            "slug": "secure-coding-engineer",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "Defensive Programming, Taint Analysis & Input Sanitization",
+            "role": "Secure Coding Specialist",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/secure-coding-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "SEC-001",
+            "name": "Application Security Architect",
+            "slug": "application-security-architect",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "Zero-Trust Architecture, Threat Modeling & Security Posture",
+            "role": "Security Architecture Authority",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/application-security-architect.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "SECR-001",
+            "name": "Secrets Management Specialist",
+            "slug": "secrets-management-specialist",
+            "department_folder": "F_security_cryptography",
+            "department_name": "Department F: Security, Cryptography & Compliance (DEPT-F)",
+            "specialization": "Environment Secrets, Zero-Disk Secrets & Leak Prevention",
+            "role": "Secrets Governance Specialist",
+            "tier": 2,
+            "specification_path": "agents/F_security_cryptography/secrets-management-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-CRYP-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-SEC-001"
+            ]
+        },
+        {
+            "id": "SRV-001",
+            "name": "PHP Runtime & Server Engineer",
+            "slug": "php-runtime-server-engineer",
+            "department_folder": "L_devops_infrastructure",
+            "department_name": "Department L: DevOps, Infrastructure & Release (DEPT-L)",
+            "specialization": "PHP-FPM, Nginx/Apache Tuning, FrankenPHP & Linux System Tweaks",
+            "role": "Server & Runtime Specialist",
+            "tier": 2,
+            "specification_path": "agents/L_devops_infrastructure/php-runtime-server-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ],
+            "skills": [
+                "SKILL-DEVOPS-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "STD-001",
+            "name": "Technical Standards Manager",
+            "slug": "technical-standards-manager",
+            "department_folder": "A_leadership_governance",
+            "department_name": "Department A: Engineering Leadership & Governance (DEPT-A)",
+            "specialization": "Codebase Standards, Style Enforcement & Conventional Commits",
+            "role": "Coding Standards Authority",
+            "tier": 1,
+            "specification_path": "agents/A_leadership_governance/technical-standards-manager.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "modify_charter",
+                "approve_adr",
+                "resolve_conflict",
+                "freeze_workflow",
+                "grant_gate_clearance"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-REVIEW-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "SYS-001",
+            "name": "Systems Analyst",
+            "slug": "systems-analyst",
+            "department_folder": "B_project_discovery",
+            "department_name": "Department B: Project Discovery & Requirements Engineering (DEPT-B)",
+            "specialization": "Business Process Modeling & Domain Logic Analysis",
+            "role": "Process & Domain Modeler",
+            "tier": 3,
+            "specification_path": "agents/B_project_discovery/systems-analyst.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "TRAC-001",
+            "name": "Requirements Traceability Specialist",
+            "slug": "requirements-traceability-specialist",
+            "department_folder": "B_project_discovery",
+            "department_name": "Department B: Project Discovery & Requirements Engineering (DEPT-B)",
+            "specialization": "Requirements Traceability Matrix (RTM) & Impact Mapping",
+            "role": "Traceability Governor",
+            "tier": 3,
+            "specification_path": "agents/B_project_discovery/requirements-traceability-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DOC-001",
+                "SKILL-GIT-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-VER-001"
+            ]
+        },
+        {
+            "id": "TRAN-001",
+            "name": "Transaction & Concurrency Engineer",
+            "slug": "transaction-concurrency-engineer",
+            "department_folder": "E_database_engineering",
+            "department_name": "Department E: Database & Data Engineering (DEPT-E)",
+            "specialization": "ACID Transactions, Row-Level Locking & Deadlock Immunity",
+            "role": "Concurrency & Locking Specialist",
+            "tier": 3,
+            "specification_path": "agents/E_database_engineering/transaction-concurrency-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-DB-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-PERF-001",
+                "SKILL-TENANT-001"
+            ]
+        },
+        {
+            "id": "UID-001",
+            "name": "UI Design Specialist",
+            "slug": "ui-design-specialist",
+            "department_folder": "G_ui_ux_design",
+            "department_name": "Department G: UI/UX, Design Systems & Usability (DEPT-G)",
+            "specialization": "High-Fidelity UI Layouts, Spacing, Visual Hierarchy & Typography",
+            "role": "UI Visual Specialist",
+            "tier": 3,
+            "specification_path": "agents/G_ui_ux_design/ui-design-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-DOC-001",
+                "SKILL-FILA-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "UJA-001",
+            "name": "User Journey Analyst",
+            "slug": "user-journey-analyst",
+            "department_folder": "G_ui_ux_design",
+            "department_name": "Department G: UI/UX, Design Systems & Usability (DEPT-G)",
+            "specialization": "User Journey Mapping, State Transition Maps & Flowcharts",
+            "role": "User Journey Specialist",
+            "tier": 3,
+            "specification_path": "agents/G_ui_ux_design/user-journey-analyst.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-DOC-001",
+                "SKILL-FILA-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "UPG-001",
+            "name": "Laravel Upgrade Specialist",
+            "slug": "laravel-upgrade-specialist",
+            "department_folder": "D_laravel_php_engineering",
+            "department_name": "Department D: Laravel & PHP Engineering (DEPT-D)",
+            "specialization": "Version Upgrades (Laravel 10->11), Deprecations & Modernization",
+            "role": "Upgrade & Compatibility Specialist",
+            "tier": 3,
+            "specification_path": "agents/D_laravel_php_engineering/laravel-upgrade-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "UTEST-001",
+            "name": "Usability Testing Specialist",
+            "slug": "usability-testing-specialist",
+            "department_folder": "G_ui_ux_design",
+            "department_name": "Department G: UI/UX, Design Systems & Usability (DEPT-G)",
+            "specialization": "Cognitive Load Reduction, Usability Verification & Heuristic Evaluation",
+            "role": "Usability Specialist",
+            "tier": 3,
+            "specification_path": "agents/G_ui_ux_design/usability-testing-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-DOC-001",
+                "SKILL-FILA-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "UTST-001",
+            "name": "Unit Testing Specialist",
+            "slug": "unit-testing-specialist",
+            "department_folder": "J_qa_testing",
+            "department_name": "Department J: Quality Assurance & Testing (DEPT-J)",
+            "specialization": "PHPUnit / Pest Unit Testing, Mocking & Pure Logic Isolation",
+            "role": "Unit Testing Specialist",
+            "tier": 3,
+            "specification_path": "agents/J_qa_testing/unit-testing-specialist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-LARAVEL-001",
+                "SKILL-PHP-001",
+                "SKILL-REVIEW-001",
+                "SKILL-TEST-001"
+            ]
+        },
+        {
+            "id": "UXS-001",
+            "name": "Product UX Strategist",
+            "slug": "product-ux-strategist",
+            "department_folder": "G_ui_ux_design",
+            "department_name": "Department G: UI/UX, Design Systems & Usability (DEPT-G)",
+            "specialization": "Product Discovery, User Personas & Experience Strategy",
+            "role": "UX Strategy Authority",
+            "tier": 3,
+            "specification_path": "agents/G_ui_ux_design/product-ux-strategist.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-DOC-001",
+                "SKILL-FILA-001",
+                "SKILL-UIUX-001"
+            ]
+        },
+        {
+            "id": "VUE-001",
+            "name": "Vue Frontend Engineer",
+            "slug": "vue-frontend-engineer",
+            "department_folder": "H_frontend_engineering",
+            "department_name": "Department H: Frontend Engineering (DEPT-H)",
+            "specialization": "Vue 3 Composition API, TypeScript, Pinia & Inertia.js",
+            "role": "Vue 3 Specialist",
+            "tier": 3,
+            "specification_path": "agents/H_frontend_engineering/vue-frontend-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-A11Y-001",
+                "SKILL-TEST-001",
+                "SKILL-UIUX-001",
+                "SKILL-VUE-001"
+            ]
+        },
+        {
+            "id": "WBHK-001",
+            "name": "Webhook Architecture Engineer",
+            "slug": "webhook-architecture-engineer",
+            "department_folder": "I_api_integrations",
+            "department_name": "Department I: API & Integrations (DEPT-I)",
+            "specialization": "Webhook Ingestion, Cryptographic Signature Verification & Idempotency",
+            "role": "Webhook Specialist",
+            "tier": 3,
+            "specification_path": "agents/I_api_integrations/webhook-architecture-engineer.md",
+            "governance_inheritance": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ],
+            "skills": [
+                "SKILL-API-001",
+                "SKILL-DOC-001",
+                "SKILL-LARAVEL-001",
+                "SKILL-SEC-001",
+                "SKILL-TEST-001"
+            ]
+        }
+    ],
+    "governance_core": "governance/SHARED-AGENT-GOVERNANCE-CORE.md",
+    "precedence_policy": "governance/DOCUMENT-HIERARCHY-POLICY.md"
+}

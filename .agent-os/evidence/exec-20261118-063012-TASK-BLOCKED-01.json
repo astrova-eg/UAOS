@@ -1,0 +1,26 @@
+{
+    "session_id": "sess_20261118_063012_3d71dcfa",
+    "project_id": "core",
+    "task_id": "TASK-BLOCKED-01",
+    "agent_id": "LCOR-001",
+    "department_id": "dept-d-laravel-php-engineering",
+    "adapter_id": "cli",
+    "status": "BLOCKED",
+    "summary": "Execution halted: Gate 0 blocked (Mandatory source quorum not satisfied)",
+    "duration_seconds": 0,
+    "events_count": 1,
+    "events": [
+        {
+            "timestamp": "2026-11-18T06:30:12+00:00",
+            "operation": "GATE_0_EVALUATED",
+            "target_resource": "rdei://tasks/TASK-BLOCKED-01/gate0",
+            "permission_decision": "REJECTED",
+            "details": {
+                "reason": "Mandatory source quorum not satisfied",
+                "violations": [
+                    "Zero sources available for depth L2"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,171 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+// Locate Composer autoloader
+$autoloadCandidates = [
+    __DIR__ . '/../vendor/autoload.php',
+    __DIR__ . '/../../../autoload.php',
+    dirname(__DIR__, 2) . '/vendor/autoload.php',
+];
+
+$autoloaderFound = false;
+foreach ($autoloadCandidates as $candidate) {
+    if (file_exists($candidate)) {
+        require_once $candidate;
+        $autoloaderFound = true;
+        break;
+    }
+}
+
+if (!$autoloaderFound) {
+    fwrite(STDERR, "Error: Composer autoload.php could not be located.\n");
+    exit(1);
+}
+
+use UniversalAgentOS\Runtime\PathResolver;
+use UniversalAgentOS\Runtime\ProjectStorageManager;
+use UniversalAgentOS\Runtime\Orchestrator;
+use UniversalAgentOS\Runtime\TaskEnvelope;
+use UniversalAgentOS\Discovery\ProjectDiscoveryEngine;
+use UniversalAgentOS\Security\KeyManager;
+use UniversalAgentOS\Security\Gate4Verifier;
+use UniversalAgentOS\Security\PersistentNonceStore;
+use UniversalAgentOS\Security\PathValidator;
+use UniversalAgentOS\Security\ToolGateway;
+use UniversalAgentOS\Security\EvidenceCollector;
+use UniversalAgentOS\Research\Engine\Gate0ClearanceVerifier;
+use UniversalAgentOS\Research\Engine\ResearchOrchestrator;
+use UniversalAgentOS\Research\Repository\ResearchDossierRepository;
+use UniversalAgentOS\Research\Retrieval\HttpRetrievalProvider;
+use UniversalAgentOS\Research\Retrieval\RestApiRetrievalProvider;
+use UniversalAgentOS\Research\Retrieval\RetrievalManager;
+use UniversalAgentOS\Mcp\McpServer;
+use UniversalAgentOS\Mcp\LocalTestMcpServer;
+
+$version = '2.0.0';
+$args = array_slice($argv, 1);
+$command = $args[0] ?? '--help';
+
+try {
+    $pathResolver = new PathResolver();
+    $storageManager = new ProjectStorageManager($pathResolver);
+    $nonceStore = new PersistentNonceStore($pathResolver);
+    $pathValidator = new PathValidator($pathResolver);
+    $keyManager = new KeyManager($pathResolver);
+    $gate4Verifier = new Gate4Verifier($pathResolver, $nonceStore, $pathValidator);
+    $toolGateway = new ToolGateway($pathResolver, $pathValidator, $gate4Verifier, null, $keyManager);
+    $evidenceCollector = new EvidenceCollector($pathResolver);
+    $dossierRepo = new ResearchDossierRepository($pathResolver);
+    $gate0Verifier = new Gate0ClearanceVerifier($dossierRepo, $pathResolver, $evidenceCollector);
+    $retrievalManager = new RetrievalManager([
+        new HttpRetrievalProvider(),
+        new RestApiRetrievalProvider(),
+    ]);
+    $researchOrchestrator = new ResearchOrchestrator(
+        pathResolver: $pathResolver,
+        dossierRepository: $dossierRepo,
+        clearanceVerifier: $gate0Verifier,
+        retrievalManager: $retrievalManager,
+        evidenceCollector: $evidenceCollector
+    );
+    $orchestrator = new Orchestrator(
+        pathResolver: $pathResolver,
+        toolGateway: $toolGateway,
+        evidenceCollector: $evidenceCollector,
+        skillEngine: null,
+        researchEngine: $researchOrchestrator
+    );
+
+    switch ($command) {
+        case '--version':
+        case '-v':
+            echo "Universal Agent Operating System (UAOS) v{$version}\n";
+            exit(0);
+
+        case 'init':
+            $dirs = $storageManager->initializeStorage();
+            echo "[OK] Initialized UAOS workspace at: " . $pathResolver->getProjectStorageDir() . "\n";
+            exit(0);
+
+        case 'profile:discover':
+            $discovery = new ProjectDiscoveryEngine($pathResolver);
+            $profile = $discovery->generateProfile($pathResolver->getProjectRootDir());
+            echo "[OK] Project profile discovered and saved to .agent-os/project-profile.json\n";
+            echo "     Backend: " . ($profile['technologies']['backend_framework'] ?? 'unknown') . "\n";
+            echo "     Database: " . ($profile['technologies']['database_engine'] ?? 'unknown') . "\n";
+            echo "     Frontend: " . ($profile['technologies']['frontend_framework'] ?? 'unknown') . "\n";
+            exit(0);
+
+        case 'profile:review':
+            $profilePath = $pathResolver->getProjectStorageDir() . '/project-profile.json';
+            if (!file_exists($profilePath)) {
+                echo "[WARN] No active profile found. Run 'agent-os profile:discover' first.\n";
+                exit(1);
+            }
+            echo file_get_contents($profilePath) . "\n";
+            exit(0);
+
+        case 'gate4:keygen':
+            $key = $keyManager->generateKey('default');
+            echo "[OK] Generated new Gate 4 HMAC key: {$key}\n";
+            echo "     Stored securely in: .agent-os/.secrets/gate4-default.key\n";
+            exit(0);
+
+        case 'run':
+            $parsed = parseCliOptions($args);
+            $prompt = $parsed['task'] ?? 'Default diagnostic task';
+            $agentId = $parsed['agent'] ?? null;
+            $envelope = new TaskEnvelope(
+                taskId: 'CLI-TASK-' . bin2hex(random_bytes(4)),
+                taskPrompt: $prompt,
+                agentId: $agentId
+            );
+            $result = $orchestrator->execute($envelope);
+            echo $result->output . "\n";
+            exit($result->exitCode);
+
+        case 'mcp:serve':
+            $server = new McpServer($pathResolver, $toolGateway, $orchestrator);
+            $server->listenStdio();
+            exit(0);
+
+        case 'mcp:test':
+            $testServer = new LocalTestMcpServer();
+            $testServer->listenStdio();
+            exit(0);
+
+        default:
+            echo "Universal Agent Operating System (UAOS) CLI v{$version}\n\n";
+            echo "Available commands:\n";
+            echo "  init              Initialize .agent-os/ workspace in host project\n";
+            echo "  profile:discover  Automatically inspect project and generate profile\n";
+            echo "  profile:review    Review discovered project technology profile\n";
+            echo "  run               Execute or plan an agent task (--task=... --agent=...)\n";
+            echo "  gate4:keygen      Generate secure Gate 4 HMAC authorization key\n";
+            echo "  mcp:serve         Launch Model Context Protocol stdio server\n";
+            echo "  mcp:test          Launch local MCP integration test server fixture\n";
+            echo "  --version         Display package version\n";
+            exit(0);
+    }
+} catch (\Throwable $e) {
+    fwrite(STDERR, "[ERROR] " . $e->getMessage() . "\n");
+    exit(1);
+}
+
+/**
+ * @param array<int, string> $args
+ * @return array<string, string>
+ */
+function parseCliOptions(array $args): array
+{
+    $options = [];
+    foreach ($args as $arg) {
+        if (str_starts_with($arg, '--')) {
+            $parts = explode('=', substr($arg, 2), 2);
+            $options[$parts[0]] = $parts[1] ?? 'true';
+        }
+    }
+    return $options;
+}

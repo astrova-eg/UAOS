@@ -1,0 +1,42 @@
+{
+  "name": "universal-agent-os/agent-os",
+  "version": "2.0.0",
+  "description": "Universal Agent Operating System: Independent, IDE-agnostic, multi-agent orchestration and governance runtime for PHP and Laravel.",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.2.0",
+    "ext-json": "*",
+    "ext-hash": "*",
+    "ext-mbstring": "*"
+  },
+  "suggest": {
+    "ext-pdo_sqlite": "Recommended for high-concurrency atomic nonce storage in PersistentNonceStore.",
+    "ext-curl": "Recommended for remote Streamable HTTP MCP connections."
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5 || ^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "UniversalAgentOS\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "UniversalAgentOS\\Tests\\": "tests/"
+    }
+  },
+  "bin": [
+    "bin/agent-os"
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "UniversalAgentOS\\Laravel\\UniversalAgentOSServiceProvider"
+      ]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+    "total_departments": 14,
+    "departments": [
+        {
+            "code": "DEPT-A",
+            "name": "Department A: Engineering Leadership & Governance",
+            "folder": "A_leadership_governance",
+            "tier": 1,
+            "agent_count": 8
+        },
+        {
+            "code": "DEPT-B",
+            "name": "Department B: Project Discovery & Requirements Engineering",
+            "folder": "B_project_discovery",
+            "tier": 3,
+            "agent_count": 7
+        },
+        {
+            "code": "DEPT-C",
+            "name": "Department C: Software Architecture & Design",
+            "folder": "C_architecture_design",
+            "tier": 2,
+            "agent_count": 8
+        },
+        {
+            "code": "DEPT-D",
+            "name": "Department D: Laravel & PHP Engineering",
+            "folder": "D_laravel_php_engineering",
+            "tier": 3,
+            "agent_count": 12
+        },
+        {
+            "code": "DEPT-E",
+            "name": "Department E: Database & Data Engineering",
+            "folder": "E_database_engineering",
+            "tier": 3,
+            "agent_count": 8
+        },
+        {
+            "code": "DEPT-F",
+            "name": "Department F: Security, Cryptography & Compliance",
+            "folder": "F_security_cryptography",
+            "tier": 2,
+            "agent_count": 12
+        },
+        {
+            "code": "DEPT-G",
+            "name": "Department G: UI\/UX, Design Systems & Usability",
+            "folder": "G_ui_ux_design",
+            "tier": 3,
+            "agent_count": 8
+        },
+        {
+            "code": "DEPT-H",
+            "name": "Department H: Frontend Engineering",
+            "folder": "H_frontend_engineering",
+            "tier": 3,
+            "agent_count": 8
+        },
+        {
+            "code": "DEPT-I",
+            "name": "Department I: API & Integrations",
+            "folder": "I_api_integrations",
+            "tier": 3,
+            "agent_count": 6
+        },
+        {
+            "code": "DEPT-J",
+            "name": "Department J: Quality Assurance & Testing",
+            "folder": "J_qa_testing",
+            "tier": 3,
+            "agent_count": 8
+        },
+        {
+            "code": "DEPT-K",
+            "name": "Department K: Performance, Scalability & Reliability",
+            "folder": "K_performance_scalability",
+            "tier": 2,
+            "agent_count": 6
+        },
+        {
+            "code": "DEPT-L",
+            "name": "Department L: DevOps, Infrastructure & Release",
+            "folder": "L_devops_infrastructure",
+            "tier": 2,
+            "agent_count": 7
+        },
+        {
+            "code": "DEPT-M",
+            "name": "Department M: Independent Review & Technical Audit",
+            "folder": "M_independent_audit",
+            "tier": 2,
+            "agent_count": 8
+        },
+        {
+            "code": "DEPT-N",
+            "name": "Department N: Technical Documentation, Knowledge & Closure",
+            "folder": "N_documentation_closure",
+            "tier": 4,
+            "agent_count": 6
+        }
+    ]
+}

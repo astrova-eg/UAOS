@@ -1,0 +1,282 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://uaos.agent-os.org/schemas/rdei/evidence-overlay.schema.json",
+  "title": "UAOS Evidence Policy Overlay Definition",
+  "description": "Formal extensible declarative schema for domain and subdomain evidence overlays in RDEI.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "policy_id",
+    "name",
+    "target_domain",
+    "target_subdomains",
+    "version",
+    "parent_policy_id",
+    "precedence_rank",
+    "methodological_hierarchy",
+    "context_match_rules",
+    "vulnerability_applicability_rules",
+    "conflict_escalation_rules",
+    "freshness_overrides",
+    "mandatory_quorum"
+  ],
+  "properties": {
+    "policy_id": {
+      "type": "string",
+      "pattern": "^(pol-overlay-[a-z0-9\\-]+|pol-base-global)$",
+      "description": "Globally unique stable overlay identifier (e.g. pol-overlay-cybersecurity, pol-overlay-sec-cve, or pol-base-global)."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 255,
+      "description": "Descriptive human-readable name of the policy overlay."
+    },
+    "target_domain": {
+      "type": "string",
+      "pattern": "^([A-P]|GLOBAL)$",
+      "description": "Target knowledge domain letter (A through P) or 'GLOBAL' for base policy."
+    },
+    "target_subdomains": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^([A-P]\\.[0-9]{2}|\\*)$" },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "List of subdomains governed by this policy. Wildcard '*' targets all subdomains of the declared domain; must not be combined with specific subdomains."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-([0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*))?(?:\\+([0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*))?$",
+      "description": "Strict Semantic Versioning 2.0.0 format (MAJOR.MINOR.PATCH with optional pre-release/build metadata). Leading zeros, 'v' prefixes, and non-SemVer formats are rejected."
+    },
+    "parent_policy_id": {
+      "type": ["string", "null"],
+      "pattern": "^(pol-base-global|pol-overlay-[a-z0-9\\-]+|none)$",
+      "description": "Parent policy identifier for inheritance: 'pol-base-global' for domain overlays, domain overlay ID for subdomain overlays, or null/'none' for base global policy."
+    },
+    "precedence_rank": {
+      "type": "integer",
+      "enum": [0, 50, 100],
+      "description": "Precedence rank strictly enforcing the 3-tier hierarchy: 100 for subdomain overlays, 50 for domain overlays, 0 for base global policy."
+    },
+    "methodological_hierarchy": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Ordered precedence of evidence types (highest to lowest)."
+    },
+    "context_match_rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["require_exact_version_match", "jurisdiction_strictness", "eol_handling"],
+      "properties": {
+        "require_exact_version_match": { "type": "boolean" },
+        "jurisdiction_strictness": { "type": "string", "enum": ["territorial_strict", "harmonized_regional", "global_advisory"] },
+        "eol_handling": { "type": "string", "enum": ["block_gate_0", "warn_only", "not_applicable"] }
+      }
+    },
+    "vulnerability_applicability_rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enforce_component_identity", "enforce_version_range", "enforce_config_reachability", "cisa_kev_escalation"],
+      "properties": {
+        "enforce_component_identity": { "type": "boolean" },
+        "enforce_version_range": { "type": "boolean" },
+        "enforce_config_reachability": { "type": "boolean" },
+        "cisa_kev_escalation": { "type": "boolean" },
+        "cvss_critical_threshold": { "type": "number", "minimum": 0.0, "maximum": 10.0 }
+      }
+    },
+    "conflict_escalation_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["condition", "escalate_to", "gate_0_action"],
+        "properties": {
+          "condition": { "type": "string" },
+          "escalate_to": { "type": "string", "enum": ["CRITICAL_DISPUTE", "RESOLVABLE_DIVERGENCE", "INFORMATIONAL_VARIANCE"] },
+          "gate_0_action": { "type": "string", "enum": ["BLOCK", "PASS_WITH_LIMITATIONS", "EXEMPT"] }
+        }
+      }
+    },
+    "freshness_overrides": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["default_ttl_hours", "max_ttl_hours"],
+      "properties": {
+        "default_ttl_hours": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 87600,
+          "description": "Standard operational cache TTL in hours. Must be <= max_ttl_hours."
+        },
+        "max_ttl_hours": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 87600,
+          "description": "Absolute ceiling for cache TTL in hours before mandatory eviction. Must be >= default_ttl_hours."
+        },
+        "emergency_ttl_hours": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 87600,
+          "description": "Accelerated cache TTL in hours for emergency hotfix contexts. Must be <= default_ttl_hours."
+        }
+      }
+    },
+    "mandatory_quorum": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10,
+      "description": "Minimum independent authoritative sources required for Gate 0 clearance."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "target_subdomains": { "contains": { "const": "*" } } }
+      },
+      "then": {
+        "properties": { "target_subdomains": { "maxItems": 1 } }
+      }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "GLOBAL" } } },
+      "then": {
+        "properties": {
+          "policy_id": { "const": "pol-base-global" },
+          "precedence_rank": { "const": 0 },
+          "target_subdomains": {
+            "items": { "const": "*" },
+            "maxItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "precedence_rank": { "const": 0 } } },
+      "then": {
+        "properties": {
+          "policy_id": { "const": "pol-base-global" },
+          "target_domain": { "const": "GLOBAL" },
+          "target_subdomains": {
+            "items": { "const": "*" },
+            "maxItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "policy_id": { "const": "pol-base-global" } } },
+      "then": {
+        "properties": {
+          "target_domain": { "const": "GLOBAL" },
+          "precedence_rank": { "const": 0 },
+          "target_subdomains": {
+            "items": { "const": "*" },
+            "maxItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "policy_id": { "pattern": "^pol-overlay-" } } },
+      "then": {
+        "properties": {
+          "target_domain": { "pattern": "^[A-P]$" },
+          "precedence_rank": { "enum": [50, 100] }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "precedence_rank": { "const": 50 } } },
+      "then": {
+        "properties": {
+          "policy_id": { "pattern": "^pol-overlay-[a-z0-9\\-]+$" },
+          "target_domain": { "pattern": "^[A-P]$" },
+          "target_subdomains": {
+            "items": { "const": "*" },
+            "maxItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "precedence_rank": { "const": 100 } } },
+      "then": {
+        "properties": {
+          "policy_id": { "pattern": "^pol-overlay-[a-z0-9\\-]+$" },
+          "target_domain": { "pattern": "^[A-P]$" },
+          "target_subdomains": {
+            "items": { "pattern": "^[A-P]\\.[0-9]{2}$" }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "A" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(A\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "B" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(B\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "C" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(C\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "D" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(D\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "E" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(E\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "F" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(F\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "G" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(G\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "H" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(H\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "I" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(I\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "J" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(J\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "K" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(K\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "L" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(L\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "M" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(M\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "N" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(N\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "O" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(O\\.[0-9]{2}|\\*)$" } } } }
+    },
+    {
+      "if": { "properties": { "target_domain": { "const": "P" } } },
+      "then": { "properties": { "target_subdomains": { "items": { "pattern": "^(P\\.[0-9]{2}|\\*)$" } } } }
+    }
+  ]
+}

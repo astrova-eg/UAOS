@@ -1,0 +1,44 @@
+{
+    "execution_id": "exec-20261115-100247-11dec9",
+    "task_id": "TASK-1794736967",
+    "agent_id": "A11Y-001",
+    "stage": 10,
+    "status": "BLOCKED",
+    "started_at": "2026-11-15T10:02:47+00:00",
+    "completed_at": "2026-11-15T10:02:47+00:00",
+    "skills_selected": [
+        "SKILL-A11Y-001",
+        "SKILL-DOC-001",
+        "SKILL-FILA-001",
+        "SKILL-UIUX-001"
+    ],
+    "skills_loaded": [
+        "SKILL-A11Y-001",
+        "SKILL-DOC-001",
+        "SKILL-FILA-001",
+        "SKILL-UIUX-001"
+    ],
+    "gate_checks": [],
+    "operations": [
+        {
+            "operation": "write_file",
+            "status": "BLOCKED",
+            "result": null,
+            "error": "Stage 10 code writing blocked: Invalid Gate 4 Token (SRS hash mismatch or missing file: Computed ff8406a345aa8d991d7e40fdca17cf0288b91d5dfcd5b15ad2d7b9e39628c020 does not match expected d17b3dc6e769ce6bb17da11a7435f7d96b47f2decf8545fa1e1b8c0918a06632).",
+            "timestamp": "2026-11-15T10:02:47+00:00"
+        }
+    ],
+    "reviewer": "AUD-008",
+    "review_verdict": "REJECTED",
+    "issues": [],
+    "extra": {
+        "classification": {
+            "category": "general_engineering",
+            "stage": 10,
+            "keywords": [],
+            "requires_review": true
+        },
+        "assigned_reviewer": "AUD-008"
+    },
+    "review_comments": "Blocked at gateway: Stage 10 code writing blocked: Invalid Gate 4 Token (SRS hash mismatch or missing file: Computed ff8406a345aa8d991d7e40fdca17cf0288b91d5dfcd5b15ad2d7b9e39628c020 does not match expected d17b3dc6e769ce6bb17da11a7435f7d96b47f2decf8545fa1e1b8c0918a06632)."
+}

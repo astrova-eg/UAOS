@@ -1,0 +1,33 @@
+{
+    "schema_version": "2.0.0",
+    "profile_version": "1.0.0",
+    "project_name": "core",
+    "technologies": {
+        "backend_framework": "generic_php",
+        "php_version": "&gt;=8.2.0",
+        "database_engine": "sqlite",
+        "orm": "unknown",
+        "frontend_framework": "filament",
+        "testing_framework": "phpunit",
+        "architecture_pattern": "generic_php"
+    },
+    "subsystems": [],
+    "provenance": {
+        "backend_framework": {
+            "value": "generic_php",
+            "status": "automatically_detected",
+            "source": "composer.json:require"
+        },
+        "database_engine": {
+            "value": "sqlite",
+            "status": "automatically_detected",
+            "source": "composer.json & config/database.php (structural only)"
+        },
+        "frontend_framework": {
+            "value": "filament",
+            "status": "manual_override",
+            "source": "user_config"
+        }
+    },
+    "last_inspected_at": "2026-11-19T12:14:18+00:00"
+}

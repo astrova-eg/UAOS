@@ -1,0 +1,42 @@
+{
+    "profile_version": "1.0.0",
+    "status": "CONFIRMED",
+    "project_meta": {
+        "name": "Legacy Monolith Blade Application",
+        "architecture_style": "modular_monolith",
+        "tenancy_model": "single_tenant"
+    },
+    "runtime_environment": {
+        "php_version": "8.2.x",
+        "composer_version": "2.5.x",
+        "os_target": "Ubuntu Linux 22.04"
+    },
+    "backend_stack": {
+        "laravel_version": "10.x",
+        "queue_driver": "database",
+        "cache_driver": "file",
+        "session_driver": "database"
+    },
+    "database_stack": {
+        "engine": "mysql",
+        "version": "5.7 \/ 8.0",
+        "connection_mode": "standard"
+    },
+    "frontend_stack": {
+        "primary_technology": "blade",
+        "ui_framework": "bootstrap_or_custom_css",
+        "admin_panel_technology": "custom_blade_views",
+        "rtl_native": false
+    },
+    "security_compliance": {
+        "auth_guard": "web",
+        "mfa_enforced": false,
+        "encryption_algorithm": "AES-256-CBC",
+        "key_management": "app_key_env"
+    },
+    "infrastructure_devops": {
+        "server_runtime": "nginx_php_fpm",
+        "ci_provider": "gitlab_ci",
+        "containerized": false
+    }
+}

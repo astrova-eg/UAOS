@@ -1,0 +1,21 @@
+# Core System Specifications Directory
+
+This directory contains dedicated specifications for each of the 18 enterprise core systems:
+- [CORE-SYS-01: Authentication & Identity Management](CORE-SYS-01/README.md)
+- [CORE-SYS-02: Multi-Tenant Isolation & Organization Hierarchy](CORE-SYS-02/README.md)
+- [CORE-SYS-03: Dynamic Form, Validation & Schema Management](CORE-SYS-03/README.md)
+- [CORE-SYS-04: Dynamic Workflow, State Machine & Orchestration](CORE-SYS-04/README.md)
+- [CORE-SYS-05: Notification, Dispatch & Multi-Channel Alerting](CORE-SYS-05/README.md)
+- [CORE-SYS-06: File, Media & Secure Document Asset Management](CORE-SYS-06/README.md)
+- [CORE-SYS-07: Audit Trail, Event Sourcing & Compliance Ledger](CORE-SYS-07/README.md)
+- [CORE-SYS-08: Cryptography, Envelope Encryption & Key Management](CORE-SYS-08/README.md)
+- [CORE-SYS-09: API Gateway, Ingress Throttling & Webhook Dispatch](CORE-SYS-09/README.md)
+- [CORE-SYS-10: Job Queue, Asynchronous Processing & Scheduling](CORE-SYS-10/README.md)
+- [CORE-SYS-11: Caching, Distributed Memory & Performance Acceleration](CORE-SYS-11/README.md)
+- [CORE-SYS-12: Search, Indexing & Full-Text Retrieval](CORE-SYS-12/README.md)
+- [CORE-SYS-13: Reporting, Data Aggregation & Business Intelligence](CORE-SYS-13/README.md)
+- [CORE-SYS-14: Billing, Subscription & Payment Gateway Integration](CORE-SYS-14/README.md)
+- [CORE-SYS-15: Localization, Internationalization & Multi-Language](CORE-SYS-15/README.md)
+- [CORE-SYS-16: Configuration, Dynamic Settings & Feature Flag Management](CORE-SYS-16/README.md)
+- [CORE-SYS-17: Telemetry, Health Probing & Observability Monitoring](CORE-SYS-17/README.md)
+- [CORE-SYS-18: System Closure, Backup & Disaster Recovery Orchestration](CORE-SYS-18/README.md)

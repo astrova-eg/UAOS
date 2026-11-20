@@ -1,0 +1,11 @@
+# Ignore ephemeral state, sessions, and cryptographic secrets
+state/
+.secrets/
+*.tmp
+
+# Track configuration, audit trails, and human clearances
+!reports/
+!evidence/
+!authorizations/
+!config.json
+!project-profile.json

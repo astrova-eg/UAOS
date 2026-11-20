@@ -1,0 +1,67 @@
+{
+    "policy_reference": "GOV-DOC-005 (AGENT-AUTHORITY-POLICY.md)",
+    "tiers": {
+        "Tier 1 (Strategic & Governance)": {
+            "agents": [
+                "CHENG-001",
+                "ARCH-001",
+                "GOV-001",
+                "DECM-001",
+                "ORCH-001",
+                "QGOV-001",
+                "STD-001",
+                "CONF-001"
+            ],
+            "permissions": [
+                "modify_charter",
+                "approve_adr",
+                "resolve_conflict",
+                "freeze_workflow",
+                "grant_gate_clearance"
+            ]
+        },
+        "Tier 2 (Architectural, Security & Audit)": {
+            "departments": [
+                "DEPT-C",
+                "DEPT-F",
+                "DEPT-K",
+                "DEPT-L",
+                "DEPT-M"
+            ],
+            "permissions": [
+                "veto_pull_request",
+                "mandate_pattern",
+                "enforce_encryption",
+                "audit_deliverables",
+                "trigger_rollback"
+            ]
+        },
+        "Tier 3 (Engineering Execution & Production)": {
+            "departments": [
+                "DEPT-B",
+                "DEPT-D",
+                "DEPT-E",
+                "DEPT-G",
+                "DEPT-H",
+                "DEPT-I",
+                "DEPT-J"
+            ],
+            "permissions": [
+                "write_code",
+                "author_migration",
+                "create_test",
+                "design_layout",
+                "profile_codebase"
+            ]
+        },
+        "Tier 4 (Documentation & Closure)": {
+            "department": "DEPT-N",
+            "permissions": [
+                "verify_dod",
+                "index_adr",
+                "publish_docs",
+                "issue_closure_certificate"
+            ]
+        }
+    }
+}
