@@ -465,24 +465,24 @@ The **RDEI** subsystem elevates AI capabilities from mere web scraping to formal
 
 <table width="100%">
   <tr>
-    <td width="33%" valign="top">
+    <td width="25%" valign="top">
       <strong>1. Source Registry & Trust</strong>
       <p>Manages curated sources across official docs, RFCs, and peer-reviewed code. Automatically calculates trust scores and filters untrusted domains.</p>
     </td>
-    <td width="33%" valign="top">
+    <td width="25%" valign="top">
       <strong>2. Freshness & Version Intel</strong>
       <p>Understands PHP 8.2 vs 8.3 vs 8.4 syntax, Laravel 10 vs 11 changes, and automatically flags deprecated patterns.</p>
     </td>
-    <td width="33%" valign="top">
+    <td width="25%" valign="top">
       <strong>3. SSRF & Retrieval Defense</strong>
       <p>Secure HTTP and MCP retrievers block loopback, RFC 1918 private IPs, cloud metadata endpoints (169.254.169.254), and sanitize outputs.</p>
     </td>
-  </tr>
-  <tr>
-    <td width="33%" valign="top">
+    <td width="25%" valign="top">
       <strong>4. Conflict Detection & Resolution</strong>
       <p>Detects when two sources disagree on an architectural approach and creates an ADR resolving the conflict through evidence hierarchy.</p>
     </td>
+  </tr>
+  <tr>
     <td width="33%" valign="top">
       <strong>5. Adaptive Depth (L0–L4)</strong>
       <p>Scales from L0 (Zero retrieval for trivial tasks) to L4 (Deep multi-source research for high-risk architectural refactors).</p>
@@ -490,6 +490,10 @@ The **RDEI** subsystem elevates AI capabilities from mere web scraping to formal
     <td width="33%" valign="top">
       <strong>6. SQLite Knowledge Store</strong>
       <p>Persists evidence dossiers, source definitions, and research claims locally in <code>.agent-os/state/knowledge.sqlite</code>.</p>
+    </td>
+    <td width="34%" valign="top">
+      <strong>7. Gate 0 Runtime Verification</strong>
+      <p>Enforces strict source quorum, freshness verification, and cryptographic evidence binding before task dispatch.</p>
     </td>
   </tr>
 </table>
