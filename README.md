@@ -122,7 +122,8 @@
 <!-- ================================================================= -->
 <!-- 01. CORE ARCHITECTURE & PHILOSOPHY                               -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="01-core-architecture--philosophy" align="center">
+  <a id="01-core-architecture--philosophy" name="01-core-architecture--philosophy"></a>
   <img src="https://img.shields.io/badge/01-CORE%20ARCHITECTURE%20%26%20PHILOSOPHY-7C3AED?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -166,7 +167,8 @@ UAOS treats software engineering as an **institutional discipline** rather than 
 <!-- ================================================================= -->
 <!-- 02. THE 14 ENGINEERING DEPARTMENTS                                -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="02-the-14-engineering-departments-112-specialized-agents" align="center">
+  <a id="02-the-14-engineering-departments-112-specialized-agents" name="02-the-14-engineering-departments-112-specialized-agents"></a>
   <img src="https://img.shields.io/badge/02-THE%2014%20ENGINEERING%20DEPARTMENTS%20(112%20AGENTS)-2563EB?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -287,7 +289,8 @@ UAOS organizes engineering capability into **14 distinct departments** comprisin
 <!-- ================================================================= -->
 <!-- 03. 23 CANONICAL ENGINEERING SKILLS                               -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="03-23-canonical-engineering-skills" align="center">
+  <a id="03-23-canonical-engineering-skills" name="03-23-canonical-engineering-skills"></a>
   <img src="https://img.shields.io/badge/03-23%20CANONICAL%20ENGINEERING%20SKILLS-0891B2?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -348,7 +351,8 @@ Agents do not rely on generic LLM instincts. Every agent executes through **23 s
 <!-- ================================================================= -->
 <!-- 04. GOVERNED LIFECYCLE & GATE 4 CRYPTOGRAPHIC CLEARANCE           -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="04-governed-lifecycle--gate-4-cryptographic-clearance" align="center">
+  <a id="04-governed-lifecycle--gate-4-cryptographic-clearance" name="04-governed-lifecycle--gate-4-cryptographic-clearance"></a>
   <img src="https://img.shields.io/badge/04-GOVERNED%20LIFECYCLE%20%26%20GATE%204%20SECURITY-10B981?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -395,7 +399,8 @@ UAOS replaces unstructured prompt-and-pray execution with a **14-Stage Governed 
 <!-- ================================================================= -->
 <!-- 05. APPLICATION-LEVEL TOOL GATEWAY & INVARIANTS                   -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="05-application-level-tool-gateway--security-invariants" align="center">
+  <a id="05-application-level-tool-gateway--security-invariants" name="05-application-level-tool-gateway--security-invariants"></a>
   <img src="https://img.shields.io/badge/05-APPLICATION--LEVEL%20TOOL%20GATEWAY-FF2D20?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -449,7 +454,8 @@ flowchart LR
 <!-- ================================================================= -->
 <!-- 06. RDEI: RESEARCH-DRIVEN ENGINEERING INTELLIGENCE                -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="06-rdei-research-driven-engineering-intelligence" align="center">
+  <a id="06-rdei-research-driven-engineering-intelligence" name="06-rdei-research-driven-engineering-intelligence"></a>
   <img src="https://img.shields.io/badge/06-RDEI%3A%20RESEARCH--DRIVEN%20ENGINEERING%20INTELLIGENCE-6D28D9?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -493,7 +499,8 @@ The **RDEI** subsystem elevates AI capabilities from mere web scraping to formal
 <!-- ================================================================= -->
 <!-- 07. MODEL CONTEXT PROTOCOL (MCP) INTEGRATION                      -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="07-model-context-protocol-mcp-integration" align="center">
+  <a id="07-model-context-protocol-mcp-integration" name="07-model-context-protocol-mcp-integration"></a>
   <img src="https://img.shields.io/badge/07-MODEL%20CONTEXT%20PROTOCOL%20(MCP)%20INTEGRATION-0891B2?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -530,7 +537,8 @@ UAOS provides native, built-in **Model Context Protocol (MCP)** support acting a
 <!-- ================================================================= -->
 <!-- 08. PLUGGABLE IDE & PLATFORM ADAPTERS                             -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="08-pluggable-ide--platform-adapters" align="center">
+  <a id="08-pluggable-ide--platform-adapters" name="08-pluggable-ide--platform-adapters"></a>
   <img src="https://img.shields.io/badge/08-PLUGGABLE%20IDE%20%26%20PLATFORM%20ADAPTERS-EA580C?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -578,7 +586,8 @@ UAOS is **completely IDE-agnostic**. It uses an extensible adapter registry (`sr
 <!-- ================================================================= -->
 <!-- 09. SAFE TECHNOLOGY STACK DISCOVERY                              -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="09-safe-technology-stack-discovery" align="center">
+  <a id="09-safe-technology-stack-discovery" name="09-safe-technology-stack-discovery"></a>
   <img src="https://img.shields.io/badge/09-SAFE%20TECHNOLOGY%20STACK%20DISCOVERY-4F46E5?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -600,7 +609,9 @@ vendor/bin/agent-os profile:review
 <!-- ================================================================= -->
 <!-- 10. QUICK START & INSTALLATION                                   -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="10-quick-start--installation" align="center">
+  <a id="10-quick-start--installation" name="10-quick-start--installation"></a>
+  <a id="quick-start--installation" name="quick-start--installation"></a>
   <img src="https://img.shields.io/badge/10-QUICK%20START%20%26%20INSTALLATION-2563EB?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -644,7 +655,8 @@ vendor/bin/agent-os profile:discover
 <!-- ================================================================= -->
 <!-- 11. CLI COMMANDS REFERENCE                                        -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="11-cli-commands-reference" align="center">
+  <a id="11-cli-commands-reference" name="11-cli-commands-reference"></a>
   <img src="https://img.shields.io/badge/11-CLI%20COMMANDS%20REFERENCE-7C3AED?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -668,7 +680,8 @@ The `bin/agent-os` binary provides a unified CLI for managing your autonomous en
 <!-- ================================================================= -->
 <!-- 12. VERIFICATION & AUTOMATED TEST SUITE                          -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="12-verification--automated-test-suite" align="center">
+  <a id="12-verification--automated-test-suite" name="12-verification--automated-test-suite"></a>
   <img src="https://img.shields.io/badge/12-VERIFICATION%20%26%20AUTOMATED%20TEST%20SUITE-10B981?style=for-the-badge&labelColor=090B1A" height="34" />
 </div>
 
@@ -720,7 +733,8 @@ ALL AUTOMATED TESTS PASSED SUCCESSFULLY
 <!-- ================================================================= -->
 <!-- 13. CONTACT & ENTERPRISE ENGAGEMENT                              -->
 <!-- ================================================================= -->
-<div align="center">
+<div id="13-contact--enterprise-engagement" align="center">
+  <a id="13-contact--enterprise-engagement" name="13-contact--enterprise-engagement"></a>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0891B2,45:4F46E5,100:090B1A&height=150&section=footer" width="100%" />
 
